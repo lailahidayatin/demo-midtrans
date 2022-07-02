@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>buyNowBtn</name>
+   <name>nameField</name>
    <tag></tag>
-   <elementGuidId>2ed12d9c-1178-4525-9d9f-05accdb8edea</elementGuidId>
+   <elementGuidId>95ba14a1-8885-4c94-b83a-aae55940e309</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@data-reactid = '.0.0.0.2.0.0.5']</value>
+         <value>//*[@data-reactid = '.0.0.1.0.3.0.0.0.1.0']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>data-reactid</name>
       <type>Main</type>
-      <value>.0.0.0.2.0.0.5</value>
-      <webElementGuid>25a4670a-6b00-4a1e-aeb5-434726b89454</webElementGuid>
+      <value>.0.0.1.0.3.0.0.0.1.0</value>
+      <webElementGuid>836b039e-8884-4b7c-b2e4-3cdb3105a7d1</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
