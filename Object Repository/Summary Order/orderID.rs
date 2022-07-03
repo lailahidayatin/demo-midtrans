@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>orderID</name>
+   <tag></tag>
+   <elementGuidId>8aca6ecf-9282-4756-a1c5-85b43d694b25</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@class='order-modal-body']//div[@class='header-order-id']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@class='order-modal-body']//div[@class='header-order-id']</value>
+      <webElementGuid>62d2e2b9-f056-4b96-a296-258c9d366acc</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
