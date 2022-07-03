@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>buyNowBtn</name>
+   <name>backToMerchant</name>
    <tag></tag>
-   <elementGuidId>2ed12d9c-1178-4525-9d9f-05accdb8edea</elementGuidId>
+   <elementGuidId>a22495c1-71f9-45f1-bb77-dd993801c771</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@data-reactid = '.0.0.0.2.0.0.5']</value>
+         <value>//button[starts-with(text(),&quot;Back to&quot;)]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-reactid</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>.0.0.0.2.0.0.5</value>
-      <webElementGuid>25a4670a-6b00-4a1e-aeb5-434726b89454</webElementGuid>
+      <value>//button[starts-with(text(),&quot;Back to&quot;)]</value>
+      <webElementGuid>3325e715-da20-4c13-b229-5a425ce7ae31</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

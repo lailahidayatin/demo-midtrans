@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>buyNowBtn</name>
+   <name>orderID</name>
    <tag></tag>
-   <elementGuidId>2ed12d9c-1178-4525-9d9f-05accdb8edea</elementGuidId>
+   <elementGuidId>8aca6ecf-9282-4756-a1c5-85b43d694b25</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@data-reactid = '.0.0.0.2.0.0.5']</value>
+         <value>//div[@class='order-modal-body']//div[@class='header-order-id']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-reactid</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>.0.0.0.2.0.0.5</value>
-      <webElementGuid>25a4670a-6b00-4a1e-aeb5-434726b89454</webElementGuid>
+      <value>//div[@class='order-modal-body']//div[@class='header-order-id']</value>
+      <webElementGuid>62d2e2b9-f056-4b96-a296-258c9d366acc</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
