@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>iFrameSummaryOrder</name>
+   <name>backToMerchant</name>
    <tag></tag>
-   <elementGuidId>dd476bb8-d923-4b2c-83a7-0e1e9c2c338b</elementGuidId>
+   <elementGuidId>a22495c1-71f9-45f1-bb77-dd993801c771</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'snap-midtrans']</value>
+         <value>//button[starts-with(text(),&quot;Back to&quot;)]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>snap-midtrans</value>
-      <webElementGuid>d0519c63-f12f-4fbe-a59f-f974af2223af</webElementGuid>
+      <value>//button[starts-with(text(),&quot;Back to&quot;)]</value>
+      <webElementGuid>3325e715-da20-4c13-b229-5a425ce7ae31</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

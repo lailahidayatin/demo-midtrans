@@ -7,17 +7,17 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//*[@href = '#/bank-transfer' and @ref_element = 'Object Repository/Summary Order/iFrameSummaryOrder']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>href</name>
       <type>Main</type>
-      <value>//div[starts-with(text(),&quot;Bank transfer&quot;)]</value>
-      <webElementGuid>e8b2e40b-cb01-4191-8c87-ef69cef14321</webElementGuid>
+      <value>#/bank-transfer</value>
+      <webElementGuid>b80dd857-a358-42d5-b68c-4cce55745b48</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

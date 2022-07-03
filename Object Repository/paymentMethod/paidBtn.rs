@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>iFrameSummaryOrder</name>
+   <name>paidBtn</name>
    <tag></tag>
-   <elementGuidId>dd476bb8-d923-4b2c-83a7-0e1e9c2c338b</elementGuidId>
+   <elementGuidId>cbc68f56-e75e-47ad-ada1-73129a399986</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'snap-midtrans']</value>
+         <value>//button[starts-with(text(),&quot;I have paid&quot;)]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>snap-midtrans</value>
-      <webElementGuid>d0519c63-f12f-4fbe-a59f-f974af2223af</webElementGuid>
+      <value>//button[starts-with(text(),&quot;I have paid&quot;)]</value>
+      <webElementGuid>51c0c4fc-899a-402f-8c8f-64b45bf754a6</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

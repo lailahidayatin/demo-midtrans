@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>iFrameSummaryOrder</name>
+   <name>bankBCA</name>
    <tag></tag>
-   <elementGuidId>dd476bb8-d923-4b2c-83a7-0e1e9c2c338b</elementGuidId>
+   <elementGuidId>b5cbcd33-6f47-44f9-bdc8-004f5ab4b999</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'snap-midtrans']</value>
+         <value>//*[@href = '#/bank-transfer/bca-va']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>href</name>
       <type>Main</type>
-      <value>snap-midtrans</value>
-      <webElementGuid>d0519c63-f12f-4fbe-a59f-f974af2223af</webElementGuid>
+      <value>#/bank-transfer/bca-va</value>
+      <webElementGuid>ef1e3538-704d-413f-84a3-17ef75694fd6</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

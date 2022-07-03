@@ -23,6 +23,8 @@ WebUI.navigateToUrl(GlobalVariable.base_url)
 
 WebUI.click(findTestObject('Landing Page/buyNowBtn'))
 
+WebUI.maximizeWindow()
+
 WebUI.verifyElementText(findTestObject('Checkout Page/qtyField'), findTestData('checkout_data').getValue(2, 1))
 
 WebUI.verifyElementAttributeValue(findTestObject('Checkout Page/amountField'), 'value', findTestData('checkout_data').getValue(
@@ -46,9 +48,9 @@ WebUI.switchToFrame(findTestObject('Summary Order/iFrameSummaryOrder'), 30)
 
 WebUI.click(findTestObject('Summary Order/expandSummaryOrder'))
 
-totalAmountText = WebUI.getText(findTestObject('Summary Order/amountTotalHeader'), FailureHandling.STOP_ON_FAILURE)
+totalAmountText = WebUI.getText(findTestObject('Summary Order/orderData/amountTotalHeader'), FailureHandling.STOP_ON_FAILURE)
 
-orderIdText = WebUI.getText(findTestObject('Summary Order/orderID'))
+orderIdText = WebUI.getText(findTestObject('Summary Order/orderData/orderID'))
 
 WebUI.verifyElementText(findTestObject('Summary Order/orderData/name'), findTestData('checkout_data').getValue(5, 1))
 
@@ -57,4 +59,16 @@ WebUI.verifyElementText(findTestObject('Summary Order/orderData/phone'), findTes
 WebUI.click(findTestObject('Summary Order/expandSummaryOrder'))
 
 WebUI.click(findTestObject('Summary Order/bankTransferMethod'))
+
+WebUI.click(findTestObject('paymentMethod/bankBCA'))
+
+WebUI.waitForElementClickable(findTestObject('paymentMethod/paidBtn'), 40)
+
+WebUI.click(findTestObject('paymentMethod/paidBtn'))
+
+WebUI.verifyElementText(findTestObject('Status Payment/statusPayment'), findTestData('checkout_data').getValue(11, 1))
+
+actualAmountText = WebUI.getText(findTestObject('Status Payment/amountTotal'))
+
+WebUI.verifyMatch(actualAmountText, totalAmountText, false)
 

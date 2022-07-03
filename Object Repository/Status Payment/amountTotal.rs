@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>iFrameSummaryOrder</name>
+   <name>amountTotal</name>
    <tag></tag>
-   <elementGuidId>dd476bb8-d923-4b2c-83a7-0e1e9c2c338b</elementGuidId>
+   <elementGuidId>c17061b7-5de0-4ac2-bf1b-97ea279b1b39</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'snap-midtrans']</value>
+         <value>//div[@class='text-headline large']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>snap-midtrans</value>
-      <webElementGuid>d0519c63-f12f-4fbe-a59f-f974af2223af</webElementGuid>
+      <value>//div[@class='text-headline large']</value>
+      <webElementGuid>bdee088c-a56b-4814-a00d-be420d17bb19</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
