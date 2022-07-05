@@ -84,7 +84,7 @@ WebUI.setText(findTestObject('fieldCreditCard/cvvField'), findTestData('credit_c
 
 WebUI.check(findTestObject('promo/withoutPromo'))
 
-String amountAfterPromo = WebUI.getText(findTestObject('Summary Order/orderData/amountTotalHeader')).replace('Rp', '').replace('.', '')
+amountAfterPromo = WebUI.getText(findTestObject('Summary Order/orderData/amountTotalHeader')).replace('Rp', '').replace('.', '')
 
 WebUI.verifyMatch(amountAfterPromo, findTestData('promo').getValue(4, 5), false)
 
@@ -104,7 +104,7 @@ WebUI.verifyElementText(findTestObject('Status Payment/statusPayment'), findTest
 
 totalAmountFinal = WebUI.getText(findTestObject('Status Payment/amountTotal')).replace('Rp', '').replace('.', '')
 
-WebUI.verifyMatch(totalAmountFinal, totalAmountAtas, false)
+WebUI.verifyMatch(totalAmountFinal, amountAfterPromo, false)
 
 infoOrderID = WebUI.getText(findTestObject('Status Payment/infoOrderID'))
 
