@@ -117,3 +117,5 @@ infoOrderID = WebUI.getText(findTestObject('Status Payment/infoOrderID'))
 
 WebUI.verifyMatch(infoOrderID, orderIdText, false)
 
+WebUI.takeScreenshot()
+

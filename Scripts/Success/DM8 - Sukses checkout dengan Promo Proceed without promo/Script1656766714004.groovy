@@ -36,7 +36,7 @@ WebUI.verifyMatch(qtyField, findTestData('checkout_data').getValue(2, 1), false)
 WebUI.verifyElementAttributeValue(findTestObject('Checkout Page/amountField'), 'value', findTestData('checkout_data').getValue(
         3, 1), 0)
 
-totalAmountField = WebUI.getText(findTestObject('Checkout Page/totalAmountField')).replace(',', '') 
+totalAmountField = WebUI.getText(findTestObject('Checkout Page/totalAmountField')).replace(',', '')
 
 WebUI.verifyMatch(totalAmountField, findTestData('checkout_data').getValue(4, 1), false)
 
@@ -56,7 +56,8 @@ WebUI.click(findTestObject('Checkout Page/checkoutBtn'))
 
 WebUI.switchToFrame(findTestObject('Summary Order/iFrameSummaryOrder'), 30)
 
-totalAmountAtas = WebUI.getText(findTestObject('Summary Order/orderData/amountTotalHeader'), FailureHandling.STOP_ON_FAILURE).replace('Rp', '').replace('.', '')
+totalAmountAtas = WebUI.getText(findTestObject('Summary Order/orderData/amountTotalHeader'), FailureHandling.STOP_ON_FAILURE).replace(
+    'Rp', '').replace('.', '')
 
 WebUI.verifyMatch(totalAmountAtas, totalAmountField, false)
 
@@ -64,7 +65,8 @@ orderIdText = WebUI.getText(findTestObject('Summary Order/orderData/orderID'))
 
 WebUI.click(findTestObject('Summary Order/expandSummaryOrder'))
 
-totalAmountBawah = WebUI.getText(findTestObject('Summary Order/orderData/amountOrderSummary')).replace('Rp', '').replace('.', '')
+totalAmountBawah = WebUI.getText(findTestObject('Summary Order/orderData/amountOrderSummary')).replace('Rp', '').replace(
+    '.', '')
 
 WebUI.verifyMatch(totalAmountBawah, totalAmountAtas, false)
 
@@ -84,7 +86,8 @@ WebUI.setText(findTestObject('fieldCreditCard/cvvField'), findTestData('credit_c
 
 WebUI.check(findTestObject('promo/withoutPromo'))
 
-amountAfterPromo = WebUI.getText(findTestObject('Summary Order/orderData/amountTotalHeader')).replace('Rp', '').replace('.', '')
+amountAfterPromo = WebUI.getText(findTestObject('Summary Order/orderData/amountTotalHeader')).replace('Rp', '').replace(
+    '.', '')
 
 WebUI.verifyMatch(amountAfterPromo, findTestData('promo').getValue(4, 5), false)
 
@@ -109,4 +112,6 @@ WebUI.verifyMatch(totalAmountFinal, amountAfterPromo, false)
 infoOrderID = WebUI.getText(findTestObject('Status Payment/infoOrderID'))
 
 WebUI.verifyMatch(infoOrderID, orderIdText, false)
+
+WebUI.takeScreenshot()
 

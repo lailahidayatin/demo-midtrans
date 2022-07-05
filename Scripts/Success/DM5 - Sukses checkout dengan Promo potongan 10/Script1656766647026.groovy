@@ -34,7 +34,7 @@ qtyField = WebUI.getText(findTestObject('Checkout Page/qtyField')).replace('×',
 WebUI.verifyMatch(qtyField, findTestData('checkout_data').getValue(2, 1), false)
 
 WebUI.verifyElementAttributeValue(findTestObject('Checkout Page/amountField'), 'value', findTestData('checkout_data').getValue(
-		3, 1), 0)
+        3, 1), 0)
 
 totalAmountField = WebUI.getText(findTestObject('Checkout Page/totalAmountField')).replace(',', '')
 
@@ -56,7 +56,8 @@ WebUI.click(findTestObject('Checkout Page/checkoutBtn'))
 
 WebUI.switchToFrame(findTestObject('Summary Order/iFrameSummaryOrder'), 30)
 
-totalAmountAtas = WebUI.getText(findTestObject('Summary Order/orderData/amountTotalHeader'), FailureHandling.STOP_ON_FAILURE).replace('Rp', '').replace('.', '')
+totalAmountAtas = WebUI.getText(findTestObject('Summary Order/orderData/amountTotalHeader'), FailureHandling.STOP_ON_FAILURE).replace(
+    'Rp', '').replace('.', '')
 
 WebUI.verifyMatch(totalAmountAtas, totalAmountField, false)
 
@@ -64,7 +65,8 @@ orderIdText = WebUI.getText(findTestObject('Summary Order/orderData/orderID'))
 
 WebUI.click(findTestObject('Summary Order/expandSummaryOrder'))
 
-totalAmountBawah = WebUI.getText(findTestObject('Summary Order/orderData/amountOrderSummary')).replace('Rp', '').replace('.', '')
+totalAmountBawah = WebUI.getText(findTestObject('Summary Order/orderData/amountOrderSummary')).replace('Rp', '').replace(
+    '.', '')
 
 WebUI.verifyMatch(totalAmountBawah, totalAmountAtas, false)
 
@@ -82,11 +84,16 @@ WebUI.setText(findTestObject('fieldCreditCard/expirationDateField'), findTestDat
 
 WebUI.setText(findTestObject('fieldCreditCard/cvvField'), findTestData('credit_card').getValue(3, 4))
 
-WebUI.check(findTestObject('promo/withoutPromo'))
+WebUI.check(findTestObject('promo/demoPromoEngine'))
 
-String amountAfterPromo = WebUI.getText(findTestObject('Summary Order/orderData/amountTotalHeader')).replace('Rp', '').replace('.', '')
+valueInstallment = WebUI.getText(findTestObject('promo/valueDemoEngine')).replace('-Rp', '').replace('.', '')
 
-WebUI.verifyMatch(amountAfterPromo, findTestData('promo').getValue(4, 5), false)
+WebUI.verifyMatch(valueInstallment, findTestData('promo').getValue(2, 2), false)
+
+amountAfterPromo = WebUI.getText(findTestObject('Summary Order/orderData/amountTotalHeader')).replace('Rp', '').replace(
+    '.', '')
+
+WebUI.verifyMatch(amountAfterPromo, findTestData('promo').getValue(4, 2), false)
 
 WebUI.click(findTestObject('paymentMethod/paynowBtn'))
 
@@ -104,8 +111,11 @@ WebUI.verifyElementText(findTestObject('Status Payment/statusPayment'), findTest
 
 totalAmountFinal = WebUI.getText(findTestObject('Status Payment/amountTotal')).replace('Rp', '').replace('.', '')
 
-WebUI.verifyMatch(totalAmountFinal, totalAmountAtas, false)
+WebUI.verifyMatch(totalAmountFinal, amountAfterPromo, false)
 
 infoOrderID = WebUI.getText(findTestObject('Status Payment/infoOrderID'))
 
 WebUI.verifyMatch(infoOrderID, orderIdText, false)
+
+WebUI.takeScreenshot()
+
