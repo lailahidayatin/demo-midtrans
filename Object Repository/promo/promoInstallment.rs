@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>withoutPromo</name>
+   <name>promoInstallment</name>
    <tag></tag>
-   <elementGuidId>468a90e6-35d6-41b0-a040-a3b2155a7a17</elementGuidId>
+   <elementGuidId>bebc3463-5b45-410c-b47d-3a4e09778518</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@for = 'no-promo']</value>
+         <value>//*[@for = '431']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>for</name>
       <type>Main</type>
-      <value>no-promo</value>
-      <webElementGuid>c7b74b39-0f3c-417e-baee-2efafd322dfb</webElementGuid>
+      <value>431</value>
+      <webElementGuid>a85df840-ebc7-4c1a-a1b0-31f8b49e87dd</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
