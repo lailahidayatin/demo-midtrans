@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class='text-headline medium']</value>
+         <value>//*[@class = 'text-headline medium']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>class</name>
       <type>Main</type>
-      <value>//div[@class='text-headline medium']</value>
-      <webElementGuid>eda7ffdb-0cd8-402f-a74c-a32e39ed7d58</webElementGuid>
+      <value>text-headline medium</value>
+      <webElementGuid>df793de5-65e2-442a-bbfa-35e62f478836</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

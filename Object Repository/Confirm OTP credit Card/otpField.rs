@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>address</name>
+   <name>otpField</name>
    <tag></tag>
-   <elementGuidId>c55c96b2-8381-4a7f-8878-7b59ccb92539</elementGuidId>
+   <elementGuidId>a67cc5cb-dc74-4f7b-bab2-092c169f0889</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'order-summary-content']</value>
+         <value>//*[@id = 'PaRes']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>id</name>
       <type>Main</type>
-      <value>order-summary-content</value>
-      <webElementGuid>c42a3461-15cd-4e26-86a7-b1ea16ec144d</webElementGuid>
+      <value>PaRes</value>
+      <webElementGuid>fff32c11-eb10-46fa-94c7-8ccef5b73ee5</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

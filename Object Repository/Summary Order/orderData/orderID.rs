@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class='order-modal-body']//div[@class='header-order-id']</value>
+         <value>//*[@class = concat(&quot;//div[@class=&quot; , &quot;'&quot; , &quot;order-modal-body&quot; , &quot;'&quot; , &quot;]//div[@class=&quot; , &quot;'&quot; , &quot;header-order-id&quot; , &quot;'&quot; , &quot;]&quot;)]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>class</name>
       <type>Main</type>
-      <value>//div[@class='order-modal-body']//div[@class='header-order-id']</value>
-      <webElementGuid>62d2e2b9-f056-4b96-a296-258c9d366acc</webElementGuid>
+      <value>header-order-id</value>
+      <webElementGuid>0dee8cc5-0cb0-4abd-a865-824e6f8c6b21</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

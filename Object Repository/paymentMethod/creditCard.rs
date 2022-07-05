@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>address</name>
+   <name>creditCard</name>
    <tag></tag>
-   <elementGuidId>c55c96b2-8381-4a7f-8878-7b59ccb92539</elementGuidId>
+   <elementGuidId>c816e9b4-19bd-4072-bfa1-d8c4d8fcfb87</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'order-summary-content']</value>
+         <value>//*[@href = '#/credit-card']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>href</name>
       <type>Main</type>
-      <value>order-summary-content</value>
-      <webElementGuid>c42a3461-15cd-4e26-86a7-b1ea16ec144d</webElementGuid>
+      <value>#/credit-card</value>
+      <webElementGuid>c73108c5-4ab2-4b3f-aca1-d39b308abc58</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

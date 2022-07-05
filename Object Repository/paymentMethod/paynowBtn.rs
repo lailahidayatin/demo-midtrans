@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>address</name>
+   <name>paynowBtn</name>
    <tag></tag>
-   <elementGuidId>c55c96b2-8381-4a7f-8878-7b59ccb92539</elementGuidId>
+   <elementGuidId>ef22a057-729a-4483-8e09-77c4c354afea</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'order-summary-content']</value>
+         <value>//button[starts-with(text(),&quot;Pay now&quot;)]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>order-summary-content</value>
-      <webElementGuid>c42a3461-15cd-4e26-86a7-b1ea16ec144d</webElementGuid>
+      <value>//button[starts-with(text(),&quot;Pay now&quot;)]</value>
+      <webElementGuid>7e19e489-1062-4720-afc0-7a8d4af2c0f7</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

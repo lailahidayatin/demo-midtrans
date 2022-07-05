@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>address</name>
+   <name>expirationDateField</name>
    <tag></tag>
-   <elementGuidId>c55c96b2-8381-4a7f-8878-7b59ccb92539</elementGuidId>
+   <elementGuidId>7417609e-0421-4531-a1b8-27d7eaf2e597</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'order-summary-content']</value>
+         <value>//*[@id = 'card-expiry']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>id</name>
       <type>Main</type>
-      <value>order-summary-content</value>
-      <webElementGuid>c42a3461-15cd-4e26-86a7-b1ea16ec144d</webElementGuid>
+      <value>card-expiry</value>
+      <webElementGuid>1fc6f063-7b3d-4558-8b59-d6aed16b8d57</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
