@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>address</name>
+   <name>amountOrderSummary</name>
    <tag></tag>
-   <elementGuidId>c55c96b2-8381-4a7f-8878-7b59ccb92539</elementGuidId>
+   <elementGuidId>f293f4e0-3620-4523-8c05-e3eb9c707dcd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'order-summary-content']</value>
+         <value>//*[@class = 'table-amount text-body order-summary-bold']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>order-summary-content</value>
-      <webElementGuid>c42a3461-15cd-4e26-86a7-b1ea16ec144d</webElementGuid>
+      <value>table-amount text-body order-summary-bold</value>
+      <webElementGuid>38209432-99e0-438c-b26c-afbe7ded133c</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

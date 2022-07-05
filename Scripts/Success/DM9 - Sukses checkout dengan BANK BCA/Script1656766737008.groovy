@@ -16,16 +16,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.lang.Integer as Integer
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.base_url)
 
+String priceTag = WebUI.getText(findTestObject('Landing Page/priceTag'))
+
 WebUI.click(findTestObject('Landing Page/buyNowBtn'))
 
 WebUI.maximizeWindow()
 
-WebUI.verifyElementText(findTestObject('Checkout Page/qtyField'), findTestData('checkout_data').getValue(2, 1))
+// WebUI.verifyElementText(findTestObject('Checkout Page/qtyField'), findTestData('checkout_data').getValue(2, 1))
 
 WebUI.verifyElementAttributeValue(findTestObject('Checkout Page/amountField'), 'value', findTestData('checkout_data').getValue(
         3, 1), 0)
@@ -46,11 +49,15 @@ WebUI.click(findTestObject('Checkout Page/checkoutBtn'))
 
 WebUI.switchToFrame(findTestObject('Summary Order/iFrameSummaryOrder'), 30)
 
-WebUI.click(findTestObject('Summary Order/expandSummaryOrder'))
-
 totalAmountText = WebUI.getText(findTestObject('Summary Order/orderData/amountTotalHeader'), FailureHandling.STOP_ON_FAILURE)
 
 orderIdText = WebUI.getText(findTestObject('Summary Order/orderData/orderID'))
+
+WebUI.click(findTestObject('Summary Order/expandSummaryOrder'))
+
+amountOrderSummary = WebUI.getText(findTestObject('Summary Order/orderData/amountOrderSummary'))
+
+WebUI.verifyMatch(amountOrderSummary, totalAmountText, false)
 
 WebUI.verifyElementText(findTestObject('Summary Order/orderData/name'), findTestData('checkout_data').getValue(5, 1))
 

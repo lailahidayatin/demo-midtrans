@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>paymentInformation</name>
+   <name>withoutPromo</name>
    <tag></tag>
-   <elementGuidId>aa076d47-7d17-450c-9ff7-d6f3728ba5d1</elementGuidId>
+   <elementGuidId>468a90e6-35d6-41b0-a040-a3b2155a7a17</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@data-reactid = '.0.0.0.2.0.1.0.0:0']</value>
+         <value>//*[@for = 'no-promo']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-reactid</name>
+      <name>for</name>
       <type>Main</type>
-      <value>.0.0.0.2.0.1.0.0:0</value>
-      <webElementGuid>14602cdf-6c4b-4a48-91cd-7c7d17bfe13a</webElementGuid>
+      <value>no-promo</value>
+      <webElementGuid>d7c6d353-40e5-4554-84ad-2693f5d9b08d</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

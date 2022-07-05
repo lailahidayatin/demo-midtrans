@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class='order-modal-body']//div[@class='header-amount']</value>
+         <value>//*[@class = 'header-amount']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>class</name>
       <type>Main</type>
-      <value>//div[@class='order-modal-body']//div[@class='header-amount']</value>
-      <webElementGuid>791d4c0c-1f87-43ba-9d27-bc1d6eb654b5</webElementGuid>
+      <value>header-amount</value>
+      <webElementGuid>f91649a8-2db4-4239-93da-8fdc14748678</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
