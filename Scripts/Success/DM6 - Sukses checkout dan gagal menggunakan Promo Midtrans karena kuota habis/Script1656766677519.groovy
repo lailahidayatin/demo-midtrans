@@ -75,7 +75,9 @@ amountAfterPromo = WebUI.getText(findTestObject('Summary Order/orderData/amountT
 
 totalAmountText = Integer.parseInt(totalAmountText.replaceAll('[^0-9]', ''))
 
-int finalAmount = totalAmountText - 2000
+int promo = Integer.parseInt(findTestData('promo').getValue(2, 3))
+
+int finalAmount = totalAmountText - promo
 
 String finalAmountText = finalAmount.toString()
 
