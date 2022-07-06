@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Promo available_list-payment-logo</name>
+   <tag></tag>
+   <elementGuidId>aa0f349f-883a-46e5-b386-ad109c2ad8c7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.list-payment-logo</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='application']/div/a/div/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>ba7466cd-8ef4-4b3d-bc70-150e47ecf459</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>list-payment-logo</value>
+      <webElementGuid>40ee19aa-d53e-409f-b134-7e0ce4c3fdd6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;application&quot;)/div[@class=&quot;page-container scroll&quot;]/a[@class=&quot;list&quot;]/div[@class=&quot;list-content&quot;]/div[@class=&quot;list-payment-logo&quot;]</value>
+      <webElementGuid>dc54190b-7b9f-4565-838a-81d538881a1d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Object Repo by Record/button-OK-Declined/Page_Sample Store/iframe_concat(id(, , snap-midtrans, , ))_po_5c513f</value>
+      <webElementGuid>b7df4f15-1bce-4482-802b-392805e8df00</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='application']/div/a/div/div[2]</value>
+      <webElementGuid>8dcc61c9-d128-449f-9ac1-a436a2edb205</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Promo available'])[1]/following::div[1]</value>
+      <webElementGuid>7c7094dc-57e4-4528-b7c4-d15357901f3f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bank transfer'])[1]/preceding::div[7]</value>
+      <webElementGuid>bb0fd68b-4cd1-4db5-901e-4b546c240d15</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='GoPay/other e-Wallets'])[1]/preceding::div[18]</value>
+      <webElementGuid>6e4e93a0-8a80-45b7-be7a-9433751f06fa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a/div/div[2]</value>
+      <webElementGuid>b381d44c-b030-481e-9ec2-2a07dc39bd2e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
