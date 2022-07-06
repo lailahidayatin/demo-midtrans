@@ -35,10 +35,7 @@
 			</matcher>
 		</filter>
 		<filter>
-    rudi-progress
 			<id>1657008851162</id>
-			<id>1656773989283</id>
-development
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -47,11 +44,7 @@ development
 			</matcher>
 		</filter>
 		<filter>
-rudi-progress
 			<id>1657008851177</id>
-
-			<id>1656773989303</id>
-development
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -60,11 +53,7 @@ development
 			</matcher>
 		</filter>
 		<filter>
-rudi-progress
 			<id>1657017987075</id>
-
-			<id>1656827898362</id>
-development
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -73,10 +62,7 @@ development
 			</matcher>
 		</filter>
 		<filter>
-rudi-progress
 			<id>1657017987075</id>
-
-			<id>1656827898372</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -167,7 +153,24 @@ rudi-progress
 		</filter>
 		<filter>
 			<id>1657030669214</id>
-development
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1657118529316</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.svn$</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1657118529329</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
