@@ -17,3 +17,35 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://demo.midtrans.com/')
+
+WebUI.maximizeWindow()
+
+WebUI.click(findTestObject('Home Page/btnBuyNow'))
+
+WebUI.delay(5)
+
+WebUI.waitForElementPresent(findTestObject('Shopping Cart/shoppingCartForm'), 5)
+
+WebUI.verifyElementPresent(findTestObject('Shopping Cart/shoppingCartForm'), 0)
+
+WebUI.click(findTestObject('Object Repository/Shopping Cart/btn_Checkout'))
+
+WebUI.delay(5)
+
+WebUI.waitForElementPresent(findTestObject('Shopping Cart/verify_priceTag'), 5)
+
+WebUI.verifyElementPresent(findTestObject('Shopping Cart/verify_priceTag'), 0)
+
+WebUI.click(findTestObject('Object Repository/methodPayment/btnpaymentCC'))
+
+WebUI.setText(findTestObject('Object Repository/CreditCard/input_CreditCard'), '4911 1111 1111 1114')
+
+WebUI.setText(findTestObject('Object Repository/CreditCard/input_expiredDate'), '0125')
+
+WebUI.setText(findTestObject('Object Repository/CreditCard/input_cvv'), '123')
+
+WebUI.verifyElementText(findTestObject('Object Repository/CreditCard/verify_numberCreditCard'), 'Make sure your card number are correct.')
+
