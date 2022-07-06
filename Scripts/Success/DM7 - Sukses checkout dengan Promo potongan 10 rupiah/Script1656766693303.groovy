@@ -71,11 +71,14 @@ WebUI.setText(findTestObject('fieldCreditCard/cvvField'), findTestData('credit_c
 
 WebUI.check(findTestObject('promo/diskon10Rupiah'))
 
-amountAfterPromo = WebUI.getText(findTestObject('Summary Order/orderData/amountTotalHeader')).replaceAll("[^0-9]", "")
+amountAfterPromo = WebUI.getText(findTestObject('Summary Order/orderData/amountTotalHeader')).replaceAll('[^0-9]', '')
 
-totalAmountText = Integer.parseInt(totalAmountText.replaceAll("[^0-9]", ""))
+totalAmountText = Integer.parseInt(totalAmountText.replaceAll('[^0-9]', ''))
 
-int finalAmount = totalAmountText - 10
+int promo = Integer.parseInt(findTestData('promo').getValue(2, 4))
+
+int finalAmount = totalAmountText - promo
+
 String finalAmountText = finalAmount.toString()
 
 WebUI.verifyMatch(amountAfterPromo, finalAmountText, false)
@@ -94,10 +97,13 @@ WebUI.switchToFrame(findTestObject('Summary Order/iFrameSummaryOrder'), 30)
 
 WebUI.verifyElementText(findTestObject('Status Payment/statusPayment'), findTestData('credit_card').getValue(5, 4))
 
-actualAmountText = WebUI.getText(findTestObject('Status Payment/amountTotal')).replaceAll("[^0-9]", "")
+actualAmountText = WebUI.getText(findTestObject('Status Payment/amountTotal')).replaceAll('[^0-9]', '')
 
 WebUI.verifyMatch(actualAmountText, finalAmountText, false)
 
 infoOrderID = WebUI.getText(findTestObject('Status Payment/infoOrderID'))
 
 WebUI.verifyMatch(infoOrderID, orderIdText, false)
+
+WebUI.takeScreenshot()
+
