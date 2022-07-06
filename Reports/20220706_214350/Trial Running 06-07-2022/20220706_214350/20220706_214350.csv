@@ -1,0 +1,299 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Trial Running 06-07-2022,Chrome 103.0.5060.114,,,2022-07-06 21:43:53,2022-07-06 21:50:00,6m - 7.113s,FAILED
+,,,,,,,
+Test Cases/Success/DM4 - Sukses checkout dengan Promo installment,Chrome 103.0.5060.114,,,2022-07-06 21:44:28,2022-07-06 21:44:50,22.122s,PASSED
+"openBrowser("""")",Chrome 103.0.5060.114,,,2022-07-06 21:44:28,2022-07-06 21:44:30,2.531s,PASSED
+navigateToUrl(base_url),Chrome 103.0.5060.114,,,2022-07-06 21:44:30,2022-07-06 21:44:32,1.397s,PASSED
+maximizeWindow(),Chrome 103.0.5060.114,,,2022-07-06 21:44:32,2022-07-06 21:44:32,0.554s,PASSED
+"priceTag = "", """").replace("","", """")",Chrome 103.0.5060.114,,,2022-07-06 21:44:32,2022-07-06 21:44:33,0.602s,PASSED
+"verifyMatch(priceTag, findTestData(""checkout_data"").getValue(3, 1), false)",Chrome 103.0.5060.114,,,2022-07-06 21:44:33,2022-07-06 21:44:33,0.036s,PASSED
+"click(findTestObject(""Landing Page/buyNowBtn""))",Chrome 103.0.5060.114,,,2022-07-06 21:44:33,2022-07-06 21:44:33,0.437s,PASSED
+"qtyField = replace(""×"", """").replace("" "", """")",Chrome 103.0.5060.114,,,2022-07-06 21:44:33,2022-07-06 21:44:34,0.490s,PASSED
+"verifyMatch(qtyField, findTestData(""checkout_data"").getValue(2, 1), false)",Chrome 103.0.5060.114,,,2022-07-06 21:44:34,2022-07-06 21:44:34,0.090s,PASSED
+"verifyElementAttributeValue(findTestObject(""Checkout Page/amountField""), ""value"", findTestData(""checkout_data"").getValue(3, 1), 0)",Chrome 103.0.5060.114,,,2022-07-06 21:44:34,2022-07-06 21:44:34,0.447s,PASSED
+"totalAmountField = getText(findTestObject(""Checkout Page/totalAmountField"")).replace("","", """")",Chrome 103.0.5060.114,,,2022-07-06 21:44:34,2022-07-06 21:44:35,0.358s,PASSED
+"verifyMatch(totalAmountField, findTestData(""checkout_data"").getValue(4, 1), false)",Chrome 103.0.5060.114,,,2022-07-06 21:44:35,2022-07-06 21:44:35,0.049s,PASSED
+"setText(findTestObject(""Checkout Page/nameField""), findTestData(""checkout_data"").getValue(5, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:44:35,2022-07-06 21:44:36,0.827s,PASSED
+"setText(findTestObject(""Checkout Page/emailField""), findTestData(""checkout_data"").getValue(6, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:44:36,2022-07-06 21:44:37,0.872s,PASSED
+"setText(findTestObject(""Checkout Page/phoneField""), findTestData(""checkout_data"").getValue(7, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:44:37,2022-07-06 21:44:37,0.824s,PASSED
+"setText(findTestObject(""Checkout Page/cityField""), findTestData(""checkout_data"").getValue(8, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:44:37,2022-07-06 21:44:38,0.813s,PASSED
+"setText(findTestObject(""Checkout Page/addressField""), findTestData(""checkout_data"").getValue(9, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:44:38,2022-07-06 21:44:39,0.836s,PASSED
+"setText(findTestObject(""Checkout Page/postalCodeField""), findTestData(""checkout_data"").getValue(10, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:44:39,2022-07-06 21:44:40,0.800s,PASSED
+"click(findTestObject(""Checkout Page/checkoutBtn""))",Chrome 103.0.5060.114,,,2022-07-06 21:44:40,2022-07-06 21:44:40,0.405s,PASSED
+"switchToFrame(findTestObject(""Summary Order/iFrameSummaryOrder""), 30)",Chrome 103.0.5060.114,,,2022-07-06 21:44:40,2022-07-06 21:44:41,0.897s,PASSED
+"totalAmountAtas = replace(""Rp"", """").replace(""."", """")",Chrome 103.0.5060.114,,,2022-07-06 21:44:41,2022-07-06 21:44:42,0.731s,PASSED
+"verifyMatch(totalAmountAtas, totalAmountField, false)",Chrome 103.0.5060.114,,,2022-07-06 21:44:42,2022-07-06 21:44:42,0.004s,PASSED
+"orderIdText = getText(findTestObject(""Summary Order/orderData/orderID""))",Chrome 103.0.5060.114,,,2022-07-06 21:44:42,2022-07-06 21:44:42,0.161s,PASSED
+"click(findTestObject(""Summary Order/expandSummaryOrder""))",Chrome 103.0.5060.114,,,2022-07-06 21:44:42,2022-07-06 21:44:42,0.227s,PASSED
+"totalAmountBawah = replace(""Rp"", """").replace(""."", """")",Chrome 103.0.5060.114,,,2022-07-06 21:44:42,2022-07-06 21:44:42,0.164s,PASSED
+"verifyMatch(totalAmountBawah, totalAmountAtas, false)",Chrome 103.0.5060.114,,,2022-07-06 21:44:42,2022-07-06 21:44:42,0.004s,PASSED
+"verifyElementText(findTestObject(""Summary Order/orderData/name""), findTestData(""checkout_data"").getValue(5, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:44:42,2022-07-06 21:44:43,0.307s,PASSED
+"verifyElementText(findTestObject(""Summary Order/orderData/phone""), findTestData(""checkout_data"").getValue(7, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:44:43,2022-07-06 21:44:43,0.278s,PASSED
+"click(findTestObject(""Summary Order/expandSummaryOrder""))",Chrome 103.0.5060.114,,,2022-07-06 21:44:43,2022-07-06 21:44:43,0.183s,PASSED
+"click(findTestObject(""paymentMethod/creditCard""))",Chrome 103.0.5060.114,,,2022-07-06 21:44:43,2022-07-06 21:44:43,0.260s,PASSED
+"setText(findTestObject(""fieldCreditCard/cardNumberField""), findTestData(""credit_card"").getValue(1, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:44:43,2022-07-06 21:44:44,0.485s,PASSED
+"setText(findTestObject(""fieldCreditCard/expirationDateField""), findTestData(""credit_card"").getValue(2, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:44:44,2022-07-06 21:44:44,0.276s,PASSED
+"setText(findTestObject(""fieldCreditCard/cvvField""), findTestData(""credit_card"").getValue(3, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:44:44,2022-07-06 21:44:45,0.275s,PASSED
+"check(findTestObject(""promo/promoInstallment""))",Chrome 103.0.5060.114,,,2022-07-06 21:44:45,2022-07-06 21:44:45,0.226s,PASSED
+"valueInstallment = replace(""-Rp"", """").replace(""."", """")",Chrome 103.0.5060.114,,,2022-07-06 21:44:45,2022-07-06 21:44:45,0.118s,PASSED
+"verifyMatch(valueInstallment, findTestData(""promo"").getValue(2, 1), false)",Chrome 103.0.5060.114,,,2022-07-06 21:44:45,2022-07-06 21:44:45,0.034s,PASSED
+"amountAfterPromo = replace(""Rp"", """").replace(""."", """")",Chrome 103.0.5060.114,,,2022-07-06 21:44:45,2022-07-06 21:44:45,0.081s,PASSED
+"verifyMatch(amountAfterPromo, findTestData(""promo"").getValue(4, 1), false)",Chrome 103.0.5060.114,,,2022-07-06 21:44:45,2022-07-06 21:44:45,0.037s,PASSED
+"click(findTestObject(""paymentMethod/paynowBtn""))",Chrome 103.0.5060.114,,,2022-07-06 21:44:45,2022-07-06 21:44:45,0.192s,PASSED
+"switchToFrame(findTestObject(""Confirm OTP credit Card/iframeConfirmOTP""), 30)",Chrome 103.0.5060.114,,,2022-07-06 21:44:45,2022-07-06 21:44:45,0.138s,PASSED
+"setText(findTestObject(""Confirm OTP credit Card/otpField""), findTestData(""credit_card"").getValue(4, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:44:45,2022-07-06 21:44:48,2.405s,PASSED
+"click(findTestObject(""Confirm OTP credit Card/submitOTP""))",Chrome 103.0.5060.114,,,2022-07-06 21:44:48,2022-07-06 21:44:49,0.958s,PASSED
+switchToDefaultContent(),Chrome 103.0.5060.114,,,2022-07-06 21:44:49,2022-07-06 21:44:49,0.044s,PASSED
+"switchToFrame(findTestObject(""Summary Order/iFrameSummaryOrder""), 30)",Chrome 103.0.5060.114,,,2022-07-06 21:44:49,2022-07-06 21:44:49,0.362s,PASSED
+"verifyElementText(findTestObject(""Status Payment/statusPayment""), findTestData(""credit_card"").getValue(5, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:44:49,2022-07-06 21:44:49,0.147s,PASSED
+"totalAmountFinal = replace(""Rp"", """").replace(""."", """")",Chrome 103.0.5060.114,,,2022-07-06 21:44:49,2022-07-06 21:44:49,0.124s,PASSED
+"verifyMatch(totalAmountFinal, amountAfterPromo, false)",Chrome 103.0.5060.114,,,2022-07-06 21:44:49,2022-07-06 21:44:49,0.004s,PASSED
+"infoOrderID = getText(findTestObject(""Status Payment/infoOrderID""))",Chrome 103.0.5060.114,,,2022-07-06 21:44:49,2022-07-06 21:44:50,0.176s,PASSED
+"verifyMatch(infoOrderID, orderIdText, false)",Chrome 103.0.5060.114,,,2022-07-06 21:44:50,2022-07-06 21:44:50,0.003s,PASSED
+takeScreenshot(),Chrome 103.0.5060.114,,,2022-07-06 21:44:50,2022-07-06 21:44:50,0.411s,PASSED
+,,,,,,,
+Test Cases/Success/DM5 - Sukses checkout dengan Promo potongan 10,Chrome 103.0.5060.114,,,2022-07-06 21:44:50,2022-07-06 21:45:13,22.735s,PASSED
+"openBrowser("""")",Chrome 103.0.5060.114,,,2022-07-06 21:44:50,2022-07-06 21:44:53,2.648s,PASSED
+navigateToUrl(base_url),Chrome 103.0.5060.114,,,2022-07-06 21:44:53,2022-07-06 21:44:54,0.908s,PASSED
+maximizeWindow(),Chrome 103.0.5060.114,,,2022-07-06 21:44:54,2022-07-06 21:44:54,0.193s,PASSED
+"priceTag = "", """").replace("","", """")",Chrome 103.0.5060.114,,,2022-07-06 21:44:54,2022-07-06 21:44:55,0.413s,PASSED
+"verifyMatch(priceTag, findTestData(""checkout_data"").getValue(3, 1), false)",Chrome 103.0.5060.114,,,2022-07-06 21:44:55,2022-07-06 21:44:55,0.038s,PASSED
+"click(findTestObject(""Landing Page/buyNowBtn""))",Chrome 103.0.5060.114,,,2022-07-06 21:44:55,2022-07-06 21:44:55,0.673s,PASSED
+"qtyField = replace(""×"", """").replace("" "", """")",Chrome 103.0.5060.114,,,2022-07-06 21:44:55,2022-07-06 21:44:56,0.508s,PASSED
+"verifyMatch(qtyField, findTestData(""checkout_data"").getValue(2, 1), false)",Chrome 103.0.5060.114,,,2022-07-06 21:44:56,2022-07-06 21:44:56,0.081s,PASSED
+"verifyElementAttributeValue(findTestObject(""Checkout Page/amountField""), ""value"", findTestData(""checkout_data"").getValue(3, 1), 0)",Chrome 103.0.5060.114,,,2022-07-06 21:44:56,2022-07-06 21:44:56,0.467s,PASSED
+"totalAmountField = getText(findTestObject(""Checkout Page/totalAmountField"")).replace("","", """")",Chrome 103.0.5060.114,,,2022-07-06 21:44:56,2022-07-06 21:44:57,0.406s,PASSED
+"verifyMatch(totalAmountField, findTestData(""checkout_data"").getValue(4, 1), false)",Chrome 103.0.5060.114,,,2022-07-06 21:44:57,2022-07-06 21:44:57,0.047s,PASSED
+"setText(findTestObject(""Checkout Page/nameField""), findTestData(""checkout_data"").getValue(5, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:44:57,2022-07-06 21:44:58,0.806s,PASSED
+"setText(findTestObject(""Checkout Page/emailField""), findTestData(""checkout_data"").getValue(6, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:44:58,2022-07-06 21:44:58,0.774s,PASSED
+"setText(findTestObject(""Checkout Page/phoneField""), findTestData(""checkout_data"").getValue(7, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:44:58,2022-07-06 21:44:59,0.851s,PASSED
+"setText(findTestObject(""Checkout Page/cityField""), findTestData(""checkout_data"").getValue(8, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:44:59,2022-07-06 21:45:00,0.787s,PASSED
+"setText(findTestObject(""Checkout Page/addressField""), findTestData(""checkout_data"").getValue(9, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:45:00,2022-07-06 21:45:01,0.870s,PASSED
+"setText(findTestObject(""Checkout Page/postalCodeField""), findTestData(""checkout_data"").getValue(10, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:45:01,2022-07-06 21:45:02,0.854s,PASSED
+"click(findTestObject(""Checkout Page/checkoutBtn""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:02,2022-07-06 21:45:02,0.429s,PASSED
+"switchToFrame(findTestObject(""Summary Order/iFrameSummaryOrder""), 30)",Chrome 103.0.5060.114,,,2022-07-06 21:45:02,2022-07-06 21:45:03,1.012s,PASSED
+"totalAmountAtas = replace(""Rp"", """").replace(""."", """")",Chrome 103.0.5060.114,,,2022-07-06 21:45:03,2022-07-06 21:45:04,0.355s,PASSED
+"verifyMatch(totalAmountAtas, totalAmountField, false)",Chrome 103.0.5060.114,,,2022-07-06 21:45:04,2022-07-06 21:45:04,0.002s,PASSED
+"orderIdText = getText(findTestObject(""Summary Order/orderData/orderID""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:04,2022-07-06 21:45:04,0.855s,PASSED
+"click(findTestObject(""Summary Order/expandSummaryOrder""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:04,2022-07-06 21:45:05,0.297s,PASSED
+"totalAmountBawah = replace(""Rp"", """").replace(""."", """")",Chrome 103.0.5060.114,,,2022-07-06 21:45:05,2022-07-06 21:45:05,0.196s,PASSED
+"verifyMatch(totalAmountBawah, totalAmountAtas, false)",Chrome 103.0.5060.114,,,2022-07-06 21:45:05,2022-07-06 21:45:05,0.003s,PASSED
+"verifyElementText(findTestObject(""Summary Order/orderData/name""), findTestData(""checkout_data"").getValue(5, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:45:05,2022-07-06 21:45:05,0.152s,PASSED
+"verifyElementText(findTestObject(""Summary Order/orderData/phone""), findTestData(""checkout_data"").getValue(7, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:45:05,2022-07-06 21:45:05,0.196s,PASSED
+"click(findTestObject(""Summary Order/expandSummaryOrder""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:05,2022-07-06 21:45:06,0.220s,PASSED
+"click(findTestObject(""paymentMethod/creditCard""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:06,2022-07-06 21:45:06,0.217s,PASSED
+"setText(findTestObject(""fieldCreditCard/cardNumberField""), findTestData(""credit_card"").getValue(1, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:45:06,2022-07-06 21:45:06,0.490s,PASSED
+"setText(findTestObject(""fieldCreditCard/expirationDateField""), findTestData(""credit_card"").getValue(2, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:45:06,2022-07-06 21:45:07,0.368s,PASSED
+"setText(findTestObject(""fieldCreditCard/cvvField""), findTestData(""credit_card"").getValue(3, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:45:07,2022-07-06 21:45:07,0.302s,PASSED
+"check(findTestObject(""promo/demoPromoEngine""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:07,2022-07-06 21:45:07,0.238s,PASSED
+"valueInstallment = replace(""-Rp"", """").replace(""."", """")",Chrome 103.0.5060.114,,,2022-07-06 21:45:07,2022-07-06 21:45:07,0.235s,PASSED
+"verifyMatch(valueInstallment, findTestData(""promo"").getValue(2, 2), false)",Chrome 103.0.5060.114,,,2022-07-06 21:45:07,2022-07-06 21:45:07,0.041s,PASSED
+"amountAfterPromo = replace(""Rp"", """").replace(""."", """")",Chrome 103.0.5060.114,,,2022-07-06 21:45:07,2022-07-06 21:45:08,0.116s,PASSED
+"verifyMatch(amountAfterPromo, findTestData(""promo"").getValue(4, 2), false)",Chrome 103.0.5060.114,,,2022-07-06 21:45:08,2022-07-06 21:45:08,0.048s,PASSED
+"click(findTestObject(""paymentMethod/paynowBtn""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:08,2022-07-06 21:45:08,0.220s,PASSED
+"switchToFrame(findTestObject(""Confirm OTP credit Card/iframeConfirmOTP""), 30)",Chrome 103.0.5060.114,,,2022-07-06 21:45:08,2022-07-06 21:45:08,0.172s,PASSED
+"setText(findTestObject(""Confirm OTP credit Card/otpField""), findTestData(""credit_card"").getValue(4, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:45:08,2022-07-06 21:45:10,1.950s,PASSED
+"click(findTestObject(""Confirm OTP credit Card/submitOTP""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:10,2022-07-06 21:45:11,1.040s,PASSED
+switchToDefaultContent(),Chrome 103.0.5060.114,,,2022-07-06 21:45:11,2022-07-06 21:45:11,0.056s,PASSED
+"switchToFrame(findTestObject(""Summary Order/iFrameSummaryOrder""), 30)",Chrome 103.0.5060.114,,,2022-07-06 21:45:11,2022-07-06 21:45:12,0.501s,PASSED
+"verifyElementText(findTestObject(""Status Payment/statusPayment""), findTestData(""credit_card"").getValue(5, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:45:12,2022-07-06 21:45:12,0.211s,PASSED
+"totalAmountFinal = replace(""Rp"", """").replace(""."", """")",Chrome 103.0.5060.114,,,2022-07-06 21:45:12,2022-07-06 21:45:12,0.351s,PASSED
+"verifyMatch(totalAmountFinal, amountAfterPromo, false)",Chrome 103.0.5060.114,,,2022-07-06 21:45:12,2022-07-06 21:45:12,0.004s,PASSED
+"infoOrderID = getText(findTestObject(""Status Payment/infoOrderID""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:12,2022-07-06 21:45:12,0.158s,PASSED
+"verifyMatch(infoOrderID, orderIdText, false)",Chrome 103.0.5060.114,,,2022-07-06 21:45:12,2022-07-06 21:45:12,0.003s,PASSED
+takeScreenshot(),Chrome 103.0.5060.114,,,2022-07-06 21:45:12,2022-07-06 21:45:13,0.491s,PASSED
+,,,,,,,
+Test Cases/Success/DM6 - Sukses checkout dan gagal menggunakan Promo Midtrans karena kuota habis,Chrome 103.0.5060.114,,,2022-07-06 21:45:13,2022-07-06 21:45:35,22.129s,PASSED
+"openBrowser("""")",Chrome 103.0.5060.114,,,2022-07-06 21:45:13,2022-07-06 21:45:16,2.492s,PASSED
+navigateToUrl(base_url),Chrome 103.0.5060.114,,,2022-07-06 21:45:16,2022-07-06 21:45:17,1.627s,PASSED
+"click(findTestObject(""Landing Page/buyNowBtn""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:17,2022-07-06 21:45:18,0.620s,PASSED
+maximizeWindow(),Chrome 103.0.5060.114,,,2022-07-06 21:45:18,2022-07-06 21:45:18,0.208s,PASSED
+"verifyElementAttributeValue(findTestObject(""Checkout Page/amountField""), ""value"", findTestData(""checkout_data"").getValue(3, 1), 0)",Chrome 103.0.5060.114,,,2022-07-06 21:45:18,2022-07-06 21:45:19,0.564s,PASSED
+"setText(findTestObject(""Checkout Page/nameField""), findTestData(""checkout_data"").getValue(5, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:45:19,2022-07-06 21:45:20,1.092s,PASSED
+"setText(findTestObject(""Checkout Page/emailField""), findTestData(""checkout_data"").getValue(6, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:45:20,2022-07-06 21:45:21,0.768s,PASSED
+"setText(findTestObject(""Checkout Page/phoneField""), findTestData(""checkout_data"").getValue(7, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:45:21,2022-07-06 21:45:21,0.797s,PASSED
+"setText(findTestObject(""Checkout Page/cityField""), findTestData(""checkout_data"").getValue(8, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:45:21,2022-07-06 21:45:22,0.800s,PASSED
+"setText(findTestObject(""Checkout Page/addressField""), findTestData(""checkout_data"").getValue(9, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:45:22,2022-07-06 21:45:23,0.910s,PASSED
+"setText(findTestObject(""Checkout Page/postalCodeField""), findTestData(""checkout_data"").getValue(10, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:45:23,2022-07-06 21:45:24,0.865s,PASSED
+"click(findTestObject(""Checkout Page/checkoutBtn""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:24,2022-07-06 21:45:24,0.418s,PASSED
+"switchToFrame(findTestObject(""Summary Order/iFrameSummaryOrder""), 30)",Chrome 103.0.5060.114,,,2022-07-06 21:45:24,2022-07-06 21:45:25,0.949s,PASSED
+"totalAmountText = getText(findTestObject(""Summary Order/orderData/amountTotalHeader""), STOP_ON_FAILURE)",Chrome 103.0.5060.114,,,2022-07-06 21:45:25,2022-07-06 21:45:26,0.282s,PASSED
+"orderIdText = getText(findTestObject(""Summary Order/orderData/orderID""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:26,2022-07-06 21:45:26,0.155s,PASSED
+"click(findTestObject(""Summary Order/expandSummaryOrder""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:26,2022-07-06 21:45:26,0.228s,PASSED
+"amountOrderSummary = getText(findTestObject(""Summary Order/orderData/amountOrderSummary""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:26,2022-07-06 21:45:26,0.141s,PASSED
+"verifyMatch(amountOrderSummary, totalAmountText, false)",Chrome 103.0.5060.114,,,2022-07-06 21:45:26,2022-07-06 21:45:26,0.001s,PASSED
+"verifyElementText(findTestObject(""Summary Order/orderData/name""), findTestData(""checkout_data"").getValue(5, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:45:26,2022-07-06 21:45:26,0.133s,PASSED
+"verifyElementText(findTestObject(""Summary Order/orderData/phone""), findTestData(""checkout_data"").getValue(7, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:45:26,2022-07-06 21:45:26,0.168s,PASSED
+"click(findTestObject(""Summary Order/expandSummaryOrder""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:26,2022-07-06 21:45:27,0.382s,PASSED
+"click(findTestObject(""paymentMethod/creditCard""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:27,2022-07-06 21:45:27,0.314s,PASSED
+"setText(findTestObject(""fieldCreditCard/cardNumberField""), findTestData(""credit_card"").getValue(1, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:45:27,2022-07-06 21:45:28,0.423s,PASSED
+"setText(findTestObject(""fieldCreditCard/expirationDateField""), findTestData(""credit_card"").getValue(2, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:45:28,2022-07-06 21:45:28,0.310s,PASSED
+"setText(findTestObject(""fieldCreditCard/cvvField""), findTestData(""credit_card"").getValue(3, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:45:28,2022-07-06 21:45:28,0.329s,PASSED
+"check(findTestObject(""promo/promoMidtrans""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:28,2022-07-06 21:45:28,0.170s,PASSED
+"amountAfterPromo = getText(findTestObject(""Summary Order/orderData/amountTotalHeader"")).replaceAll(""[^0-9]"", """")",Chrome 103.0.5060.114,,,2022-07-06 21:45:28,2022-07-06 21:45:28,0.096s,PASSED
+"totalAmountText = Integer.parseInt(totalAmountText.replaceAll(""[^0-9]"", """"))",Chrome 103.0.5060.114,,,2022-07-06 21:45:28,2022-07-06 21:45:28,0.001s,PASSED
+finalAmount = totalAmountText - 2000,Chrome 103.0.5060.114,,,2022-07-06 21:45:28,2022-07-06 21:45:28,0.002s,PASSED
+finalAmountText = finalAmount.toString(),Chrome 103.0.5060.114,,,2022-07-06 21:45:28,2022-07-06 21:45:28,0.000s,PASSED
+"verifyMatch(amountAfterPromo, finalAmountText, false)",Chrome 103.0.5060.114,,,2022-07-06 21:45:28,2022-07-06 21:45:28,0.001s,PASSED
+"click(findTestObject(""paymentMethod/paynowBtn""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:28,2022-07-06 21:45:29,0.166s,PASSED
+"verifyElementText(findTestObject(""Status Payment/quotaFull""), ""Promo quota is fully used"")",Chrome 103.0.5060.114,,,2022-07-06 21:45:29,2022-07-06 21:45:29,0.465s,PASSED
+"click(findTestObject(""QuotaFullDialog/backButton""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:29,2022-07-06 21:45:29,0.202s,PASSED
+"check(findTestObject(""promo/promoMidtrans""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:29,2022-07-06 21:45:30,0.197s,PASSED
+"click(findTestObject(""paymentMethod/paynowBtn""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:30,2022-07-06 21:45:30,0.147s,PASSED
+"verifyElementText(findTestObject(""Status Payment/quotaFull""), ""Promo quota is fully used"")",Chrome 103.0.5060.114,,,2022-07-06 21:45:30,2022-07-06 21:45:30,0.498s,PASSED
+"click(findTestObject(""QuotaFullDialog/proceedButton""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:30,2022-07-06 21:45:30,0.208s,PASSED
+"switchToFrame(findTestObject(""Confirm OTP credit Card/iframeConfirmOTP""), 30)",Chrome 103.0.5060.114,,,2022-07-06 21:45:30,2022-07-06 21:45:30,0.113s,PASSED
+"setText(findTestObject(""Confirm OTP credit Card/otpField""), findTestData(""credit_card"").getValue(4, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:45:30,2022-07-06 21:45:33,2.400s,PASSED
+"click(findTestObject(""Confirm OTP credit Card/submitOTP""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:33,2022-07-06 21:45:34,0.981s,PASSED
+switchToDefaultContent(),Chrome 103.0.5060.114,,,2022-07-06 21:45:34,2022-07-06 21:45:34,0.035s,PASSED
+"switchToFrame(findTestObject(""Summary Order/iFrameSummaryOrder""), 30)",Chrome 103.0.5060.114,,,2022-07-06 21:45:34,2022-07-06 21:45:34,0.348s,PASSED
+"verifyElementText(findTestObject(""Status Payment/statusPayment""), findTestData(""credit_card"").getValue(5, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:45:34,2022-07-06 21:45:34,0.124s,PASSED
+"actualAmountText = getText(findTestObject(""Status Payment/amountTotal"")).replaceAll(""[^0-9]"", """")",Chrome 103.0.5060.114,,,2022-07-06 21:45:34,2022-07-06 21:45:34,0.094s,PASSED
+"verifyMatch(actualAmountText, totalAmountText.toString(), false)",Chrome 103.0.5060.114,,,2022-07-06 21:45:34,2022-07-06 21:45:34,0.003s,PASSED
+"infoOrderID = getText(findTestObject(""Status Payment/infoOrderID""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:34,2022-07-06 21:45:35,0.102s,PASSED
+"verifyMatch(infoOrderID, orderIdText, false)",Chrome 103.0.5060.114,,,2022-07-06 21:45:35,2022-07-06 21:45:35,0.003s,PASSED
+takeScreenshot(),Chrome 103.0.5060.114,,,2022-07-06 21:45:35,2022-07-06 21:45:35,0.294s,PASSED
+,,,,,,,
+Test Cases/Success/DM7 - Sukses checkout dengan Promo potongan 10 rupiah,Chrome 103.0.5060.114,,,2022-07-06 21:45:35,2022-07-06 21:46:04,28.671s,PASSED
+"openBrowser("""")",Chrome 103.0.5060.114,,,2022-07-06 21:45:35,2022-07-06 21:45:37,2.186s,PASSED
+navigateToUrl(base_url),Chrome 103.0.5060.114,,,2022-07-06 21:45:37,2022-07-06 21:45:38,1.113s,PASSED
+"click(findTestObject(""Landing Page/buyNowBtn""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:38,2022-07-06 21:45:39,0.736s,PASSED
+maximizeWindow(),Chrome 103.0.5060.114,,,2022-07-06 21:45:39,2022-07-06 21:45:39,0.206s,PASSED
+"verifyElementAttributeValue(findTestObject(""Checkout Page/amountField""), ""value"", findTestData(""checkout_data"").getValue(3, 1), 0)",Chrome 103.0.5060.114,,,2022-07-06 21:45:39,2022-07-06 21:45:40,0.546s,PASSED
+"setText(findTestObject(""Checkout Page/nameField""), findTestData(""checkout_data"").getValue(5, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:45:40,2022-07-06 21:45:41,0.805s,PASSED
+"setText(findTestObject(""Checkout Page/emailField""), findTestData(""checkout_data"").getValue(6, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:45:41,2022-07-06 21:45:42,0.795s,PASSED
+"setText(findTestObject(""Checkout Page/phoneField""), findTestData(""checkout_data"").getValue(7, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:45:42,2022-07-06 21:45:42,0.870s,PASSED
+"setText(findTestObject(""Checkout Page/cityField""), findTestData(""checkout_data"").getValue(8, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:45:42,2022-07-06 21:45:44,1.206s,PASSED
+"setText(findTestObject(""Checkout Page/addressField""), findTestData(""checkout_data"").getValue(9, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:45:44,2022-07-06 21:45:48,4.053s,PASSED
+"setText(findTestObject(""Checkout Page/postalCodeField""), findTestData(""checkout_data"").getValue(10, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:45:48,2022-07-06 21:45:52,3.894s,PASSED
+"click(findTestObject(""Checkout Page/checkoutBtn""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:52,2022-07-06 21:45:54,1.992s,PASSED
+"switchToFrame(findTestObject(""Summary Order/iFrameSummaryOrder""), 30)",Chrome 103.0.5060.114,,,2022-07-06 21:45:54,2022-07-06 21:45:56,2.075s,PASSED
+"totalAmountText = getText(findTestObject(""Summary Order/orderData/amountTotalHeader""), STOP_ON_FAILURE)",Chrome 103.0.5060.114,,,2022-07-06 21:45:56,2022-07-06 21:45:56,0.216s,PASSED
+"orderIdText = getText(findTestObject(""Summary Order/orderData/orderID""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:56,2022-07-06 21:45:56,0.108s,PASSED
+"click(findTestObject(""Summary Order/expandSummaryOrder""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:56,2022-07-06 21:45:56,0.204s,PASSED
+"amountOrderSummary = getText(findTestObject(""Summary Order/orderData/amountOrderSummary""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:56,2022-07-06 21:45:56,0.100s,PASSED
+"verifyMatch(amountOrderSummary, totalAmountText, false)",Chrome 103.0.5060.114,,,2022-07-06 21:45:56,2022-07-06 21:45:56,0.002s,PASSED
+"verifyElementText(findTestObject(""Summary Order/orderData/name""), findTestData(""checkout_data"").getValue(5, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:45:56,2022-07-06 21:45:56,0.157s,PASSED
+"verifyElementText(findTestObject(""Summary Order/orderData/phone""), findTestData(""checkout_data"").getValue(7, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:45:56,2022-07-06 21:45:57,0.147s,PASSED
+"click(findTestObject(""Summary Order/expandSummaryOrder""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:57,2022-07-06 21:45:57,0.150s,PASSED
+"click(findTestObject(""paymentMethod/creditCard""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:57,2022-07-06 21:45:57,0.221s,PASSED
+"setText(findTestObject(""fieldCreditCard/cardNumberField""), findTestData(""credit_card"").getValue(1, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:45:57,2022-07-06 21:45:57,0.368s,PASSED
+"setText(findTestObject(""fieldCreditCard/expirationDateField""), findTestData(""credit_card"").getValue(2, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:45:57,2022-07-06 21:45:58,0.272s,PASSED
+"setText(findTestObject(""fieldCreditCard/cvvField""), findTestData(""credit_card"").getValue(3, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:45:58,2022-07-06 21:45:58,0.256s,PASSED
+"check(findTestObject(""promo/diskon10Rupiah""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:58,2022-07-06 21:45:58,0.210s,PASSED
+"amountAfterPromo = getText(findTestObject(""Summary Order/orderData/amountTotalHeader"")).replaceAll(""[^0-9]"", """")",Chrome 103.0.5060.114,,,2022-07-06 21:45:58,2022-07-06 21:45:58,0.100s,PASSED
+"totalAmountText = Integer.parseInt(totalAmountText.replaceAll(""[^0-9]"", """"))",Chrome 103.0.5060.114,,,2022-07-06 21:45:58,2022-07-06 21:45:58,0.000s,PASSED
+finalAmount = totalAmountText - 10,Chrome 103.0.5060.114,,,2022-07-06 21:45:58,2022-07-06 21:45:58,0.000s,PASSED
+finalAmountText = finalAmount.toString(),Chrome 103.0.5060.114,,,2022-07-06 21:45:58,2022-07-06 21:45:58,0.000s,PASSED
+"verifyMatch(amountAfterPromo, finalAmountText, false)",Chrome 103.0.5060.114,,,2022-07-06 21:45:58,2022-07-06 21:45:58,0.002s,PASSED
+"click(findTestObject(""paymentMethod/paynowBtn""))",Chrome 103.0.5060.114,,,2022-07-06 21:45:58,2022-07-06 21:45:58,0.198s,PASSED
+"switchToFrame(findTestObject(""Confirm OTP credit Card/iframeConfirmOTP""), 30)",Chrome 103.0.5060.114,,,2022-07-06 21:45:58,2022-07-06 21:45:59,0.147s,PASSED
+"setText(findTestObject(""Confirm OTP credit Card/otpField""), findTestData(""credit_card"").getValue(4, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:45:59,2022-07-06 21:46:00,1.609s,PASSED
+"click(findTestObject(""Confirm OTP credit Card/submitOTP""))",Chrome 103.0.5060.114,,,2022-07-06 21:46:00,2022-07-06 21:46:01,0.923s,PASSED
+switchToDefaultContent(),Chrome 103.0.5060.114,,,2022-07-06 21:46:01,2022-07-06 21:46:01,0.024s,PASSED
+"switchToFrame(findTestObject(""Summary Order/iFrameSummaryOrder""), 30)",Chrome 103.0.5060.114,,,2022-07-06 21:46:01,2022-07-06 21:46:03,1.456s,PASSED
+"verifyElementText(findTestObject(""Status Payment/statusPayment""), findTestData(""credit_card"").getValue(5, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:46:03,2022-07-06 21:46:03,0.157s,PASSED
+"actualAmountText = getText(findTestObject(""Status Payment/amountTotal"")).replaceAll(""[^0-9]"", """")",Chrome 103.0.5060.114,,,2022-07-06 21:46:03,2022-07-06 21:46:03,0.151s,PASSED
+"verifyMatch(actualAmountText, finalAmountText, false)",Chrome 103.0.5060.114,,,2022-07-06 21:46:03,2022-07-06 21:46:03,0.002s,PASSED
+"infoOrderID = getText(findTestObject(""Status Payment/infoOrderID""))",Chrome 103.0.5060.114,,,2022-07-06 21:46:03,2022-07-06 21:46:03,0.102s,PASSED
+"verifyMatch(infoOrderID, orderIdText, false)",Chrome 103.0.5060.114,,,2022-07-06 21:46:03,2022-07-06 21:46:03,0.002s,PASSED
+takeScreenshot(),Chrome 103.0.5060.114,,,2022-07-06 21:46:03,2022-07-06 21:46:04,0.589s,PASSED
+,,,,,,,
+Test Cases/Success/DM8 - Sukses checkout dengan Promo Proceed without promo,Chrome 103.0.5060.114,,,2022-07-06 21:46:04,2022-07-06 21:46:22,18.818s,PASSED
+"openBrowser("""")",Chrome 103.0.5060.114,,,2022-07-06 21:46:04,2022-07-06 21:46:07,2.525s,PASSED
+navigateToUrl(base_url),Chrome 103.0.5060.114,,,2022-07-06 21:46:07,2022-07-06 21:46:07,0.710s,PASSED
+maximizeWindow(),Chrome 103.0.5060.114,,,2022-07-06 21:46:07,2022-07-06 21:46:07,0.179s,PASSED
+"priceTag = "", """").replace("","", """")",Chrome 103.0.5060.114,,,2022-07-06 21:46:07,2022-07-06 21:46:08,0.652s,PASSED
+"verifyMatch(priceTag, findTestData(""checkout_data"").getValue(3, 1), false)",Chrome 103.0.5060.114,,,2022-07-06 21:46:08,2022-07-06 21:46:08,0.038s,PASSED
+"click(findTestObject(""Landing Page/buyNowBtn""))",Chrome 103.0.5060.114,,,2022-07-06 21:46:08,2022-07-06 21:46:09,0.409s,PASSED
+"qtyField = replace(""×"", """").replace("" "", """")",Chrome 103.0.5060.114,,,2022-07-06 21:46:09,2022-07-06 21:46:09,0.535s,PASSED
+"verifyMatch(qtyField, findTestData(""checkout_data"").getValue(2, 1), false)",Chrome 103.0.5060.114,,,2022-07-06 21:46:09,2022-07-06 21:46:09,0.081s,PASSED
+"verifyElementAttributeValue(findTestObject(""Checkout Page/amountField""), ""value"", findTestData(""checkout_data"").getValue(3, 1), 0)",Chrome 103.0.5060.114,,,2022-07-06 21:46:09,2022-07-06 21:46:10,0.402s,PASSED
+"totalAmountField = getText(findTestObject(""Checkout Page/totalAmountField"")).replace("","", """")",Chrome 103.0.5060.114,,,2022-07-06 21:46:10,2022-07-06 21:46:10,0.358s,PASSED
+"verifyMatch(totalAmountField, findTestData(""checkout_data"").getValue(4, 1), false)",Chrome 103.0.5060.114,,,2022-07-06 21:46:10,2022-07-06 21:46:10,0.030s,PASSED
+"setText(findTestObject(""Checkout Page/nameField""), findTestData(""checkout_data"").getValue(5, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:46:10,2022-07-06 21:46:11,0.837s,PASSED
+"setText(findTestObject(""Checkout Page/emailField""), findTestData(""checkout_data"").getValue(6, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:46:11,2022-07-06 21:46:12,0.807s,PASSED
+"setText(findTestObject(""Checkout Page/phoneField""), findTestData(""checkout_data"").getValue(7, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:46:12,2022-07-06 21:46:12,0.787s,PASSED
+"setText(findTestObject(""Checkout Page/cityField""), findTestData(""checkout_data"").getValue(8, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:46:12,2022-07-06 21:46:13,0.759s,PASSED
+"setText(findTestObject(""Checkout Page/addressField""), findTestData(""checkout_data"").getValue(9, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:46:13,2022-07-06 21:46:14,0.824s,PASSED
+"setText(findTestObject(""Checkout Page/postalCodeField""), findTestData(""checkout_data"").getValue(10, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:46:14,2022-07-06 21:46:15,0.781s,PASSED
+"click(findTestObject(""Checkout Page/checkoutBtn""))",Chrome 103.0.5060.114,,,2022-07-06 21:46:15,2022-07-06 21:46:15,0.424s,PASSED
+"switchToFrame(findTestObject(""Summary Order/iFrameSummaryOrder""), 30)",Chrome 103.0.5060.114,,,2022-07-06 21:46:15,2022-07-06 21:46:16,0.932s,PASSED
+"totalAmountAtas = replace(""Rp"", """").replace(""."", """")",Chrome 103.0.5060.114,,,2022-07-06 21:46:16,2022-07-06 21:46:16,0.115s,PASSED
+"verifyMatch(totalAmountAtas, totalAmountField, false)",Chrome 103.0.5060.114,,,2022-07-06 21:46:16,2022-07-06 21:46:16,0.002s,PASSED
+"orderIdText = getText(findTestObject(""Summary Order/orderData/orderID""))",Chrome 103.0.5060.114,,,2022-07-06 21:46:16,2022-07-06 21:46:16,0.099s,PASSED
+"click(findTestObject(""Summary Order/expandSummaryOrder""))",Chrome 103.0.5060.114,,,2022-07-06 21:46:16,2022-07-06 21:46:16,0.186s,PASSED
+"totalAmountBawah = replace(""Rp"", """").replace(""."", """")",Chrome 103.0.5060.114,,,2022-07-06 21:46:16,2022-07-06 21:46:17,0.132s,PASSED
+"verifyMatch(totalAmountBawah, totalAmountAtas, false)",Chrome 103.0.5060.114,,,2022-07-06 21:46:17,2022-07-06 21:46:17,0.002s,PASSED
+"verifyElementText(findTestObject(""Summary Order/orderData/name""), findTestData(""checkout_data"").getValue(5, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:46:17,2022-07-06 21:46:17,0.140s,PASSED
+"verifyElementText(findTestObject(""Summary Order/orderData/phone""), findTestData(""checkout_data"").getValue(7, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:46:17,2022-07-06 21:46:17,0.120s,PASSED
+"click(findTestObject(""Summary Order/expandSummaryOrder""))",Chrome 103.0.5060.114,,,2022-07-06 21:46:17,2022-07-06 21:46:17,0.324s,PASSED
+"click(findTestObject(""paymentMethod/creditCard""))",Chrome 103.0.5060.114,,,2022-07-06 21:46:17,2022-07-06 21:46:18,0.450s,PASSED
+"setText(findTestObject(""fieldCreditCard/cardNumberField""), findTestData(""credit_card"").getValue(1, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:46:18,2022-07-06 21:46:18,0.382s,PASSED
+"setText(findTestObject(""fieldCreditCard/expirationDateField""), findTestData(""credit_card"").getValue(2, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:46:18,2022-07-06 21:46:18,0.305s,PASSED
+"setText(findTestObject(""fieldCreditCard/cvvField""), findTestData(""credit_card"").getValue(3, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:46:18,2022-07-06 21:46:19,0.242s,PASSED
+"check(findTestObject(""promo/withoutPromo""))",Chrome 103.0.5060.114,,,2022-07-06 21:46:19,2022-07-06 21:46:19,0.191s,PASSED
+"amountAfterPromo = replace(""Rp"", """").replace(""."", """")",Chrome 103.0.5060.114,,,2022-07-06 21:46:19,2022-07-06 21:46:19,0.105s,PASSED
+"verifyMatch(amountAfterPromo, findTestData(""promo"").getValue(4, 5), false)",Chrome 103.0.5060.114,,,2022-07-06 21:46:19,2022-07-06 21:46:19,0.031s,PASSED
+"click(findTestObject(""paymentMethod/paynowBtn""))",Chrome 103.0.5060.114,,,2022-07-06 21:46:19,2022-07-06 21:46:19,0.170s,PASSED
+"switchToFrame(findTestObject(""Confirm OTP credit Card/iframeConfirmOTP""), 30)",Chrome 103.0.5060.114,,,2022-07-06 21:46:19,2022-07-06 21:46:19,0.153s,PASSED
+"setText(findTestObject(""Confirm OTP credit Card/otpField""), findTestData(""credit_card"").getValue(4, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:46:19,2022-07-06 21:46:20,1.239s,PASSED
+"click(findTestObject(""Confirm OTP credit Card/submitOTP""))",Chrome 103.0.5060.114,,,2022-07-06 21:46:20,2022-07-06 21:46:21,0.888s,PASSED
+switchToDefaultContent(),Chrome 103.0.5060.114,,,2022-07-06 21:46:21,2022-07-06 21:46:21,0.037s,PASSED
+"switchToFrame(findTestObject(""Summary Order/iFrameSummaryOrder""), 30)",Chrome 103.0.5060.114,,,2022-07-06 21:46:21,2022-07-06 21:46:22,0.350s,PASSED
+"verifyElementText(findTestObject(""Status Payment/statusPayment""), findTestData(""credit_card"").getValue(5, 4))",Chrome 103.0.5060.114,,,2022-07-06 21:46:22,2022-07-06 21:46:22,0.137s,PASSED
+"totalAmountFinal = replace(""Rp"", """").replace(""."", """")",Chrome 103.0.5060.114,,,2022-07-06 21:46:22,2022-07-06 21:46:22,0.092s,PASSED
+"verifyMatch(totalAmountFinal, amountAfterPromo, false)",Chrome 103.0.5060.114,,,2022-07-06 21:46:22,2022-07-06 21:46:22,0.001s,PASSED
+"infoOrderID = getText(findTestObject(""Status Payment/infoOrderID""))",Chrome 103.0.5060.114,,,2022-07-06 21:46:22,2022-07-06 21:46:22,0.099s,PASSED
+"verifyMatch(infoOrderID, orderIdText, false)",Chrome 103.0.5060.114,,,2022-07-06 21:46:22,2022-07-06 21:46:22,0.002s,PASSED
+takeScreenshot(),Chrome 103.0.5060.114,,,2022-07-06 21:46:22,2022-07-06 21:46:22,0.280s,PASSED
+,,,,,,,
+Test Cases/Success/DM9 - Sukses checkout dengan BANK BCA,Chrome 103.0.5060.114,,,2022-07-06 21:47:40,2022-07-06 21:48:05,25.562s,FAILED
+"openBrowser("""")",Chrome 103.0.5060.114,,,2022-07-06 21:47:40,2022-07-06 21:47:42,2.146s,PASSED
+navigateToUrl(base_url),Chrome 103.0.5060.114,,,2022-07-06 21:47:42,2022-07-06 21:47:43,0.758s,PASSED
+maximizeWindow(),Chrome 103.0.5060.114,,,2022-07-06 21:47:43,2022-07-06 21:47:43,0.169s,PASSED
+"priceTag = "", """").replace("","", """")",Chrome 103.0.5060.114,,,2022-07-06 21:47:43,2022-07-06 21:47:44,0.614s,PASSED
+"verifyMatch(priceTag, findTestData(""checkout_data"").getValue(3, 1), false)",Chrome 103.0.5060.114,,,2022-07-06 21:47:44,2022-07-06 21:47:44,0.030s,PASSED
+"click(findTestObject(""Landing Page/buyNowBtn""))",Chrome 103.0.5060.114,,,2022-07-06 21:47:44,2022-07-06 21:47:44,0.420s,PASSED
+"qtyField = replace(""×"", """").replace("" "", """")",Chrome 103.0.5060.114,,,2022-07-06 21:47:44,2022-07-06 21:47:45,0.516s,PASSED
+"verifyMatch(qtyField, findTestData(""checkout_data"").getValue(2, 1), false)",Chrome 103.0.5060.114,,,2022-07-06 21:47:45,2022-07-06 21:47:45,0.062s,PASSED
+"verifyElementAttributeValue(findTestObject(""Checkout Page/amountField""), ""value"", findTestData(""checkout_data"").getValue(3, 1), 0)",Chrome 103.0.5060.114,,,2022-07-06 21:47:45,2022-07-06 21:47:45,0.400s,PASSED
+"totalAmountField = getText(findTestObject(""Checkout Page/totalAmountField"")).replace("","", """")",Chrome 103.0.5060.114,,,2022-07-06 21:47:45,2022-07-06 21:47:45,0.326s,PASSED
+"verifyMatch(totalAmountField, findTestData(""checkout_data"").getValue(4, 1), false)",Chrome 103.0.5060.114,,,2022-07-06 21:47:45,2022-07-06 21:47:45,0.028s,PASSED
+"setText(findTestObject(""Checkout Page/nameField""), findTestData(""checkout_data"").getValue(5, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:47:45,2022-07-06 21:47:46,0.832s,PASSED
+"setText(findTestObject(""Checkout Page/emailField""), findTestData(""checkout_data"").getValue(6, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:47:46,2022-07-06 21:47:47,0.804s,PASSED
+"setText(findTestObject(""Checkout Page/phoneField""), findTestData(""checkout_data"").getValue(7, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:47:47,2022-07-06 21:47:48,0.788s,PASSED
+"setText(findTestObject(""Checkout Page/cityField""), findTestData(""checkout_data"").getValue(8, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:47:48,2022-07-06 21:47:49,0.762s,PASSED
+"setText(findTestObject(""Checkout Page/addressField""), findTestData(""checkout_data"").getValue(9, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:47:49,2022-07-06 21:47:49,0.762s,PASSED
+"setText(findTestObject(""Checkout Page/postalCodeField""), findTestData(""checkout_data"").getValue(10, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:47:49,2022-07-06 21:47:50,0.763s,PASSED
+"click(findTestObject(""Checkout Page/checkoutBtn""))",Chrome 103.0.5060.114,,,2022-07-06 21:47:50,2022-07-06 21:47:50,0.377s,PASSED
+"switchToFrame(findTestObject(""Summary Order/iFrameSummaryOrder""), 30)",Chrome 103.0.5060.114,,,2022-07-06 21:47:50,2022-07-06 21:47:51,0.762s,PASSED
+"totalAmountAtas = replace(""Rp"", """").replace(""."", """")",Chrome 103.0.5060.114,,,2022-07-06 21:47:51,2022-07-06 21:47:51,0.096s,PASSED
+"verifyMatch(totalAmountAtas, totalAmountField, false)",Chrome 103.0.5060.114,,,2022-07-06 21:47:51,2022-07-06 21:47:51,0.002s,PASSED
+"orderIdText = getText(findTestObject(""Summary Order/orderData/orderID""))",Chrome 103.0.5060.114,,,2022-07-06 21:47:51,2022-07-06 21:47:51,0.099s,PASSED
+"click(findTestObject(""Summary Order/expandSummaryOrder""))",Chrome 103.0.5060.114,,,2022-07-06 21:47:51,2022-07-06 21:47:52,0.283s,PASSED
+"totalAmountBawah = replace(""Rp"", """").replace(""."", """")",Chrome 103.0.5060.114,,,2022-07-06 21:47:52,2022-07-06 21:47:52,0.113s,PASSED
+"verifyMatch(totalAmountBawah, totalAmountAtas, false)",Chrome 103.0.5060.114,,,2022-07-06 21:47:52,2022-07-06 21:47:52,0.004s,PASSED
+"verifyElementText(findTestObject(""Summary Order/orderData/name""), findTestData(""checkout_data"").getValue(5, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:47:52,2022-07-06 21:47:52,0.191s,PASSED
+"verifyElementText(findTestObject(""Summary Order/orderData/phone""), findTestData(""checkout_data"").getValue(7, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:47:52,2022-07-06 21:47:52,0.124s,PASSED
+"click(findTestObject(""Summary Order/expandSummaryOrder""))",Chrome 103.0.5060.114,,,2022-07-06 21:47:52,2022-07-06 21:47:52,0.150s,PASSED
+"click(findTestObject(""Summary Order/bankTransferMethod""))",Chrome 103.0.5060.114,,,2022-07-06 21:47:52,2022-07-06 21:47:52,0.183s,PASSED
+"click(findTestObject(""paymentMethod/bankBCA""))",Chrome 103.0.5060.114,,,2022-07-06 21:47:52,2022-07-06 21:47:53,0.397s,PASSED
+"waitForElementClickable(findTestObject(""paymentMethod/paidBtn""), 40)",Chrome 103.0.5060.114,,,2022-07-06 21:47:53,2022-07-06 21:47:53,0.244s,PASSED
+"click(findTestObject(""paymentMethod/paidBtn""))",Chrome 103.0.5060.114,,,2022-07-06 21:47:53,2022-07-06 21:47:53,0.178s,PASSED
+"verifyElementText(findTestObject(""Status Payment/statusPayment""), findTestData(""checkout_data"").getValue(11, 1))",Chrome 103.0.5060.114,,,2022-07-06 21:47:53,2022-07-06 21:48:05,12.145s,FAILED
+,,,,,,,
+Test Cases/Fail/DM1 - Gagal checkout dengan invalid data pada credit and debit card,Chrome 103.0.5060.114,,,2022-07-06 21:49:31,2022-07-06 21:50:00,29.106s,FAILED
+"openBrowser("""")",Chrome 103.0.5060.114,,,2022-07-06 21:49:31,2022-07-06 21:49:33,2.171s,PASSED
+"navigateToUrl(""https://demo.midtrans.com/"")",Chrome 103.0.5060.114,,,2022-07-06 21:49:33,2022-07-06 21:49:35,1.657s,PASSED
+maximizeWindow(),Chrome 103.0.5060.114,,,2022-07-06 21:49:35,2022-07-06 21:49:35,0.219s,PASSED
+"click(findTestObject(""Home Page/btnBuyNow""))",Chrome 103.0.5060.114,,,2022-07-06 21:49:35,2022-07-06 21:49:36,0.759s,PASSED
+delay(5),Chrome 103.0.5060.114,,,2022-07-06 21:49:36,2022-07-06 21:49:41,5.016s,PASSED
+"waitForElementPresent(findTestObject(""Shopping Cart/shoppingCartForm""), 5)",Chrome 103.0.5060.114,,,2022-07-06 21:49:41,2022-07-06 21:49:41,0.326s,PASSED
+"verifyElementPresent(findTestObject(""Shopping Cart/shoppingCartForm""), 0)",Chrome 103.0.5060.114,,,2022-07-06 21:49:41,2022-07-06 21:49:42,0.305s,PASSED
+"click(findTestObject(""Object Repository/Shopping Cart/btn_Checkout""))",Chrome 103.0.5060.114,,,2022-07-06 21:49:42,2022-07-06 21:49:42,0.405s,PASSED
+delay(5),Chrome 103.0.5060.114,,,2022-07-06 21:49:42,2022-07-06 21:49:47,5.012s,PASSED
+"waitForElementPresent(findTestObject(""Shopping Cart/verify_priceTag""), 5)",Chrome 103.0.5060.114,,,2022-07-06 21:49:47,2022-07-06 21:49:47,0.430s,PASSED
+"verifyElementPresent(findTestObject(""Shopping Cart/verify_priceTag""), 0)",Chrome 103.0.5060.114,,,2022-07-06 21:49:47,2022-07-06 21:49:48,0.522s,PASSED
+"click(findTestObject(""Object Repository/methodPayment/btnpaymentCC""))",Chrome 103.0.5060.114,,,2022-07-06 21:49:48,2022-07-06 21:49:48,0.587s,PASSED
+"setText(findTestObject(""Object Repository/CreditCard/input_CreditCard""), ""4911 1111 1111 1114"")",Chrome 103.0.5060.114,,,2022-07-06 21:49:48,2022-07-06 21:50:00,11.690s,FAILED
