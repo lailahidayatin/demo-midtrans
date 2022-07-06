@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Trial Running 06-07-2022" time="97.815" tests="3" failures="0" errors="0">
+   <testsuite name="Trial Running 06-07-2022" tests="3" failures="0" errors="0" time="97.815" skipped="0" timestamp="2022-07-06 00:12:53" hostname="dot - localhost" id="Test Suites/Trial Running 06-07-2022">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/dot/Katalon Studio/demo-midtrans/Reports/20220706_001248/Trial Running 06-07-2022/20220706_001248"/>
+         <property name="logFiles" value="/Users/dot/Katalon Studio/demo-midtrans/Reports/20220706_001248/Trial Running 06-07-2022/20220706_001248/execution0.log"/>
+         <property name="attachments" value="/Users/dot/Katalon Studio/demo-midtrans/Reports/20220706_001248/Trial Running 06-07-2022/20220706_001248/1657041207901.png, /Users/dot/Katalon Studio/demo-midtrans/Reports/20220706_001248/Trial Running 06-07-2022/20220706_001248/1657041227339.png, /Users/dot/Katalon Studio/demo-midtrans/Reports/20220706_001248/Trial Running 06-07-2022/20220706_001248/1657041254751.png, /Users/dot/Katalon Studio/demo-midtrans/Reports/20220706_001248/Trial Running 06-07-2022/20220706_001248/1657041255341.png, /Users/dot/Katalon Studio/demo-midtrans/Reports/20220706_001248/Trial Running 06-07-2022/20220706_001248/1657041270526.png"/>
+         <property name="hostName" value="dot - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="8.3.5.208"/>
+         <property name="browser" value="Chrome 103.0.5060.53"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="sessionId" value="c109771c3f3e45f8695d10ee6f066691"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Success/DM4 - Sukses checkout dengan Promo installment" time="34.68" classname="Test Cases/Success/DM4 - Sukses checkout dengan Promo installment" status="PASSED">
+         <system-out><![CDATA[2022-07-06 00:12:53 - [TEST_CASE][PASSED] - Test Cases/Success/DM4 - Sukses checkout dengan Promo installment: Test Cases/Success/DM4 - Sukses checkout dengan Promo installment
+
+2022-07-06 00:12:54 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2022-07-06 00:12:54 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-07-06 00:12:54 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-07-06 00:12:59 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2022-07-06 00:12:59 - [TEST_STEP][PASSED] - navigateToUrl(base_url): Navigate to 'https://demo.midtrans.com/' successfully
+
+2022-07-06 00:13:01 - [MESSAGE][PASSED] - Navigate to 'https://demo.midtrans.com/' successfully
+
+2022-07-06 00:13:01 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2022-07-06 00:13:01 - [MESSAGE][PASSED] - Current window maximized
+
+2022-07-06 00:13:01 - [TEST_STEP][PASSED] - priceTag = ", "").replace(",", ""): Text of object 'Object Repository/Landing Page/priceTag' is: '20,000'
+
+2022-07-06 00:13:02 - [MESSAGE][PASSED] - Text of object 'Object Repository/Landing Page/priceTag' is: '20,000'
+
+2022-07-06 00:13:02 - [TEST_STEP][PASSED] - verifyMatch(priceTag, findTestData("checkout_data").getValue(3, 1), false): Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:13:03 - [MESSAGE][PASSED] - Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:13:03 - [TEST_STEP][PASSED] - click(findTestObject("Landing Page/buyNowBtn")): Object: 'Object Repository/Landing Page/buyNowBtn' is clicked on
+
+2022-07-06 00:13:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Landing Page/buyNowBtn' is clicked on
+
+2022-07-06 00:13:03 - [TEST_STEP][PASSED] - qtyField = replace("×", "").replace(" ", ""): Text of object 'Object Repository/Checkout Page/qtyField' is: '× 1'
+
+2022-07-06 00:13:04 - [MESSAGE][PASSED] - Text of object 'Object Repository/Checkout Page/qtyField' is: '× 1'
+
+2022-07-06 00:13:04 - [TEST_STEP][PASSED] - verifyMatch(qtyField, findTestData("checkout_data").getValue(2, 1), false): Actual text '1' and expected text '1' are matched 
+
+2022-07-06 00:13:04 - [MESSAGE][PASSED] - Actual text '1' and expected text '1' are matched 
+
+2022-07-06 00:13:04 - [TEST_STEP][PASSED] - verifyElementAttributeValue(findTestObject("Checkout Page/amountField"), "value", findTestData("checkout_data").getValue(3, 1), 0): Object 'Object Repository/Checkout Page/amountField' has attribute 'value' with value '20000'
+
+2022-07-06 00:13:04 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '10'
+
+2022-07-06 00:13:05 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout Page/amountField' has attribute 'value' with value '20000'
+
+2022-07-06 00:13:05 - [TEST_STEP][PASSED] - totalAmountField = getText(findTestObject("Checkout Page/totalAmountField")).replace(",", ""): Text of object 'Object Repository/Checkout Page/totalAmountField' is: '20,000'
+
+2022-07-06 00:13:05 - [MESSAGE][PASSED] - Text of object 'Object Repository/Checkout Page/totalAmountField' is: '20,000'
+
+2022-07-06 00:13:05 - [TEST_STEP][PASSED] - verifyMatch(totalAmountField, findTestData("checkout_data").getValue(4, 1), false): Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:13:05 - [MESSAGE][PASSED] - Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:13:05 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout Page/nameField"), findTestData("checkout_data").getValue(5, 1)): Text 'Jhon doe' is set on object 'Object Repository/Checkout Page/nameField'
+
+2022-07-06 00:13:06 - [MESSAGE][PASSED] - Text 'Jhon doe' is set on object 'Object Repository/Checkout Page/nameField'
+
+2022-07-06 00:13:06 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout Page/emailField"), findTestData("checkout_data").getValue(6, 1)): Text 'jhondoe@gmail.com' is set on object 'Object Repository/Checkout Page/emailField'
+
+2022-07-06 00:13:07 - [MESSAGE][PASSED] - Text 'jhondoe@gmail.com' is set on object 'Object Repository/Checkout Page/emailField'
+
+2022-07-06 00:13:07 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout Page/phoneField"), findTestData("checkout_data").getValue(7, 1)): Text '+6282230337651' is set on object 'Object Repository/Checkout Page/phoneField'
+
+2022-07-06 00:13:08 - [MESSAGE][PASSED] - Text '+6282230337651' is set on object 'Object Repository/Checkout Page/phoneField'
+
+2022-07-06 00:13:08 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout Page/cityField"), findTestData("checkout_data").getValue(8, 1)): Text 'Malang' is set on object 'Object Repository/Checkout Page/cityField'
+
+2022-07-06 00:13:08 - [MESSAGE][PASSED] - Text 'Malang' is set on object 'Object Repository/Checkout Page/cityField'
+
+2022-07-06 00:13:08 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout Page/addressField"), findTestData("checkout_data").getValue(9, 1)): Text 'Jl. Soekarno Hatta' is set on object 'Object Repository/Checkout Page/addressField'
+
+2022-07-06 00:13:09 - [MESSAGE][PASSED] - Text 'Jl. Soekarno Hatta' is set on object 'Object Repository/Checkout Page/addressField'
+
+2022-07-06 00:13:09 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout Page/postalCodeField"), findTestData("checkout_data").getValue(10, 1)): Text '65141' is set on object 'Object Repository/Checkout Page/postalCodeField'
+
+2022-07-06 00:13:10 - [MESSAGE][PASSED] - Text '65141' is set on object 'Object Repository/Checkout Page/postalCodeField'
+
+2022-07-06 00:13:10 - [TEST_STEP][PASSED] - click(findTestObject("Checkout Page/checkoutBtn")): Object: 'Object Repository/Checkout Page/checkoutBtn' is clicked on
+
+2022-07-06 00:13:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout Page/checkoutBtn' is clicked on
+
+2022-07-06 00:13:10 - [TEST_STEP][PASSED] - switchToFrame(findTestObject("Summary Order/iFrameSummaryOrder"), 30): null
+
+2022-07-06 00:13:11 - [TEST_STEP][PASSED] - totalAmountAtas = replace("Rp", "").replace(".", ""): Text of object 'Object Repository/Summary Order/orderData/amountTotalHeader' is: 'Rp20.000'
+
+2022-07-06 00:13:11 - [MESSAGE][PASSED] - Text of object 'Object Repository/Summary Order/orderData/amountTotalHeader' is: 'Rp20.000'
+
+2022-07-06 00:13:11 - [TEST_STEP][PASSED] - verifyMatch(totalAmountAtas, totalAmountField, false): Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:13:11 - [MESSAGE][PASSED] - Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:13:11 - [TEST_STEP][PASSED] - orderIdText = getText(findTestObject("Summary Order/orderData/orderID")): Text of object 'Object Repository/Summary Order/orderData/orderID' is: 'Order ID #sample-store-1657041191'
+
+2022-07-06 00:13:12 - [MESSAGE][PASSED] - Text of object 'Object Repository/Summary Order/orderData/orderID' is: 'Order ID #sample-store-1657041191'
+
+2022-07-06 00:13:12 - [TEST_STEP][PASSED] - click(findTestObject("Summary Order/expandSummaryOrder")): Object: 'Object Repository/Summary Order/expandSummaryOrder' is clicked on
+
+2022-07-06 00:13:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Summary Order/expandSummaryOrder' is clicked on
+
+2022-07-06 00:13:12 - [TEST_STEP][PASSED] - totalAmountBawah = replace("Rp", "").replace(".", ""): Text of object 'Object Repository/Summary Order/orderData/amountOrderSummary' is: 'Rp20.000'
+
+2022-07-06 00:13:12 - [MESSAGE][PASSED] - Text of object 'Object Repository/Summary Order/orderData/amountOrderSummary' is: 'Rp20.000'
+
+2022-07-06 00:13:12 - [TEST_STEP][PASSED] - verifyMatch(totalAmountBawah, totalAmountAtas, false): Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:13:12 - [MESSAGE][PASSED] - Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:13:12 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Summary Order/orderData/name"), findTestData("checkout_data").getValue(5, 1)): Actual text and expected text of test object 'Object Repository/Summary Order/orderData/name' are matched.
+
+2022-07-06 00:13:12 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Summary Order/orderData/name' are matched.
+
+2022-07-06 00:13:12 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Summary Order/orderData/phone"), findTestData("checkout_data").getValue(7, 1)): Actual text and expected text of test object 'Object Repository/Summary Order/orderData/phone' are matched.
+
+2022-07-06 00:13:12 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Summary Order/orderData/phone' are matched.
+
+2022-07-06 00:13:12 - [TEST_STEP][PASSED] - click(findTestObject("Summary Order/expandSummaryOrder")): Object: 'Object Repository/Summary Order/expandSummaryOrder' is clicked on
+
+2022-07-06 00:13:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Summary Order/expandSummaryOrder' is clicked on
+
+2022-07-06 00:13:13 - [TEST_STEP][PASSED] - click(findTestObject("paymentMethod/creditCard")): Object: 'Object Repository/paymentMethod/creditCard' is clicked on
+
+2022-07-06 00:13:13 - [MESSAGE][PASSED] - Object: 'Object Repository/paymentMethod/creditCard' is clicked on
+
+2022-07-06 00:13:13 - [TEST_STEP][PASSED] - setText(findTestObject("fieldCreditCard/cardNumberField"), findTestData("credit_card").getValue(1, 4)): Text '4811111111111114' is set on object 'Object Repository/fieldCreditCard/cardNumberField'
+
+2022-07-06 00:13:14 - [MESSAGE][PASSED] - Text '4811111111111114' is set on object 'Object Repository/fieldCreditCard/cardNumberField'
+
+2022-07-06 00:13:14 - [TEST_STEP][PASSED] - setText(findTestObject("fieldCreditCard/expirationDateField"), findTestData("credit_card").getValue(2, 4)): Text '0125' is set on object 'Object Repository/fieldCreditCard/expirationDateField'
+
+2022-07-06 00:13:14 - [MESSAGE][PASSED] - Text '0125' is set on object 'Object Repository/fieldCreditCard/expirationDateField'
+
+2022-07-06 00:13:14 - [TEST_STEP][PASSED] - setText(findTestObject("fieldCreditCard/cvvField"), findTestData("credit_card").getValue(3, 4)): Text '123' is set on object 'Object Repository/fieldCreditCard/cvvField'
+
+2022-07-06 00:13:14 - [MESSAGE][PASSED] - Text '123' is set on object 'Object Repository/fieldCreditCard/cvvField'
+
+2022-07-06 00:13:14 - [TEST_STEP][PASSED] - check(findTestObject("promo/promoInstallment")): Object 'Object Repository/promo/promoInstallment' is checked
+
+2022-07-06 00:13:14 - [MESSAGE][PASSED] - Object 'Object Repository/promo/promoInstallment' is checked
+
+2022-07-06 00:13:14 - [TEST_STEP][PASSED] - valueInstallment = replace("-Rp", "").replace(".", ""): Text of object 'Object Repository/promo/valueInstallment' is: '-Rp5.000'
+
+2022-07-06 00:13:15 - [MESSAGE][PASSED] - Text of object 'Object Repository/promo/valueInstallment' is: '-Rp5.000'
+
+2022-07-06 00:13:15 - [TEST_STEP][PASSED] - verifyMatch(valueInstallment, findTestData("promo").getValue(2, 1), false): Actual text '5000' and expected text '5000' are matched 
+
+2022-07-06 00:13:15 - [MESSAGE][PASSED] - Actual text '5000' and expected text '5000' are matched 
+
+2022-07-06 00:13:15 - [TEST_STEP][PASSED] - amountAfterPromo = replace("Rp", "").replace(".", ""): Text of object 'Object Repository/Summary Order/orderData/amountTotalHeader' is: 'Rp15.000'
+
+2022-07-06 00:13:15 - [MESSAGE][PASSED] - Text of object 'Object Repository/Summary Order/orderData/amountTotalHeader' is: 'Rp15.000'
+
+2022-07-06 00:13:15 - [TEST_STEP][PASSED] - verifyMatch(amountAfterPromo, findTestData("promo").getValue(4, 1), false): Actual text '15000' and expected text '15000' are matched 
+
+2022-07-06 00:13:15 - [MESSAGE][PASSED] - Actual text '15000' and expected text '15000' are matched 
+
+2022-07-06 00:13:15 - [TEST_STEP][PASSED] - click(findTestObject("paymentMethod/paynowBtn")): Object: 'Object Repository/paymentMethod/paynowBtn' is clicked on
+
+2022-07-06 00:13:15 - [MESSAGE][PASSED] - Object: 'Object Repository/paymentMethod/paynowBtn' is clicked on
+
+2022-07-06 00:13:15 - [TEST_STEP][PASSED] - switchToFrame(findTestObject("Confirm OTP credit Card/iframeConfirmOTP"), 30): null
+
+2022-07-06 00:13:15 - [TEST_STEP][PASSED] - setText(findTestObject("Confirm OTP credit Card/otpField"), findTestData("credit_card").getValue(4, 4)): Text '112233' is set on object 'Object Repository/Confirm OTP credit Card/otpField'
+
+2022-07-06 00:13:23 - [MESSAGE][PASSED] - Text '112233' is set on object 'Object Repository/Confirm OTP credit Card/otpField'
+
+2022-07-06 00:13:23 - [TEST_STEP][PASSED] - click(findTestObject("Confirm OTP credit Card/submitOTP")): Object: 'Object Repository/Confirm OTP credit Card/submitOTP' is clicked on
+
+2022-07-06 00:13:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Confirm OTP credit Card/submitOTP' is clicked on
+
+2022-07-06 00:13:26 - [TEST_STEP][PASSED] - switchToDefaultContent(): null
+
+2022-07-06 00:13:26 - [TEST_STEP][PASSED] - switchToFrame(findTestObject("Summary Order/iFrameSummaryOrder"), 30): null
+
+2022-07-06 00:13:27 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Status Payment/statusPayment"), findTestData("credit_card").getValue(5, 4)): Actual text and expected text of test object 'Object Repository/Status Payment/statusPayment' are matched.
+
+2022-07-06 00:13:27 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Status Payment/statusPayment' are matched.
+
+2022-07-06 00:13:27 - [TEST_STEP][PASSED] - totalAmountFinal = replace("Rp", "").replace(".", ""): Text of object 'Object Repository/Status Payment/amountTotal' is: 'Rp15.000'
+
+2022-07-06 00:13:27 - [MESSAGE][PASSED] - Text of object 'Object Repository/Status Payment/amountTotal' is: 'Rp15.000'
+
+2022-07-06 00:13:27 - [TEST_STEP][PASSED] - verifyMatch(totalAmountFinal, amountAfterPromo, false): Actual text '15000' and expected text '15000' are matched 
+
+2022-07-06 00:13:27 - [MESSAGE][PASSED] - Actual text '15000' and expected text '15000' are matched 
+
+2022-07-06 00:13:27 - [TEST_STEP][PASSED] - infoOrderID = getText(findTestObject("Status Payment/infoOrderID")): Text of object 'Object Repository/Status Payment/infoOrderID' is: 'Order ID #sample-store-1657041191'
+
+2022-07-06 00:13:27 - [MESSAGE][PASSED] - Text of object 'Object Repository/Status Payment/infoOrderID' is: 'Order ID #sample-store-1657041191'
+
+2022-07-06 00:13:27 - [TEST_STEP][PASSED] - verifyMatch(infoOrderID, orderIdText, false): Actual text 'Order ID #sample-store-1657041191' and expected text 'Order ID #sample-store-1657041191' are matched 
+
+2022-07-06 00:13:27 - [MESSAGE][PASSED] - Actual text 'Order ID #sample-store-1657041191' and expected text 'Order ID #sample-store-1657041191' are matched 
+
+2022-07-06 00:13:27 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+2022-07-06 00:13:28 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/dot/Katalon Studio/demo-midtrans/Reports/20220706_001248/Trial Running 06-07-2022/20220706_001248/1657041207901.png]]]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Success/DM8 - Sukses checkout dengan Promo Proceed without promo" time="19.5" classname="Test Cases/Success/DM8 - Sukses checkout dengan Promo Proceed without promo" status="PASSED">
+         <system-out><![CDATA[2022-07-06 00:13:28 - [TEST_CASE][PASSED] - Test Cases/Success/DM8 - Sukses checkout dengan Promo Proceed without promo: Test Cases/Success/DM8 - Sukses checkout dengan Promo Proceed without promo
+
+2022-07-06 00:13:29 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2022-07-06 00:13:29 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2022-07-06 00:13:29 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-07-06 00:13:29 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-07-06 00:13:31 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2022-07-06 00:13:31 - [TEST_STEP][PASSED] - navigateToUrl(base_url): Navigate to 'https://demo.midtrans.com/' successfully
+
+2022-07-06 00:13:32 - [MESSAGE][PASSED] - Navigate to 'https://demo.midtrans.com/' successfully
+
+2022-07-06 00:13:32 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2022-07-06 00:13:33 - [MESSAGE][PASSED] - Current window maximized
+
+2022-07-06 00:13:33 - [TEST_STEP][PASSED] - priceTag = ", "").replace(",", ""): Text of object 'Object Repository/Landing Page/priceTag' is: '20,000'
+
+2022-07-06 00:13:33 - [MESSAGE][PASSED] - Text of object 'Object Repository/Landing Page/priceTag' is: '20,000'
+
+2022-07-06 00:13:33 - [TEST_STEP][PASSED] - verifyMatch(priceTag, findTestData("checkout_data").getValue(3, 1), false): Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:13:33 - [MESSAGE][PASSED] - Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:13:33 - [TEST_STEP][PASSED] - click(findTestObject("Landing Page/buyNowBtn")): Object: 'Object Repository/Landing Page/buyNowBtn' is clicked on
+
+2022-07-06 00:13:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Landing Page/buyNowBtn' is clicked on
+
+2022-07-06 00:13:34 - [TEST_STEP][PASSED] - qtyField = replace("×", "").replace(" ", ""): Text of object 'Object Repository/Checkout Page/qtyField' is: '× 1'
+
+2022-07-06 00:13:34 - [MESSAGE][PASSED] - Text of object 'Object Repository/Checkout Page/qtyField' is: '× 1'
+
+2022-07-06 00:13:34 - [TEST_STEP][PASSED] - verifyMatch(qtyField, findTestData("checkout_data").getValue(2, 1), false): Actual text '1' and expected text '1' are matched 
+
+2022-07-06 00:13:34 - [MESSAGE][PASSED] - Actual text '1' and expected text '1' are matched 
+
+2022-07-06 00:13:34 - [TEST_STEP][PASSED] - verifyElementAttributeValue(findTestObject("Checkout Page/amountField"), "value", findTestData("checkout_data").getValue(3, 1), 0): Object 'Object Repository/Checkout Page/amountField' has attribute 'value' with value '20000'
+
+2022-07-06 00:13:35 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '10'
+
+2022-07-06 00:13:35 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout Page/amountField' has attribute 'value' with value '20000'
+
+2022-07-06 00:13:35 - [TEST_STEP][PASSED] - totalAmountField = getText(findTestObject("Checkout Page/totalAmountField")).replace(",", ""): Text of object 'Object Repository/Checkout Page/totalAmountField' is: '20,000'
+
+2022-07-06 00:13:35 - [MESSAGE][PASSED] - Text of object 'Object Repository/Checkout Page/totalAmountField' is: '20,000'
+
+2022-07-06 00:13:35 - [TEST_STEP][PASSED] - verifyMatch(totalAmountField, findTestData("checkout_data").getValue(4, 1), false): Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:13:35 - [MESSAGE][PASSED] - Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:13:35 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout Page/nameField"), findTestData("checkout_data").getValue(5, 1)): Text 'Jhon doe' is set on object 'Object Repository/Checkout Page/nameField'
+
+2022-07-06 00:13:36 - [MESSAGE][PASSED] - Text 'Jhon doe' is set on object 'Object Repository/Checkout Page/nameField'
+
+2022-07-06 00:13:36 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout Page/emailField"), findTestData("checkout_data").getValue(6, 1)): Text 'jhondoe@gmail.com' is set on object 'Object Repository/Checkout Page/emailField'
+
+2022-07-06 00:13:37 - [MESSAGE][PASSED] - Text 'jhondoe@gmail.com' is set on object 'Object Repository/Checkout Page/emailField'
+
+2022-07-06 00:13:37 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout Page/phoneField"), findTestData("checkout_data").getValue(7, 1)): Text '+6282230337651' is set on object 'Object Repository/Checkout Page/phoneField'
+
+2022-07-06 00:13:37 - [MESSAGE][PASSED] - Text '+6282230337651' is set on object 'Object Repository/Checkout Page/phoneField'
+
+2022-07-06 00:13:37 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout Page/cityField"), findTestData("checkout_data").getValue(8, 1)): Text 'Malang' is set on object 'Object Repository/Checkout Page/cityField'
+
+2022-07-06 00:13:38 - [MESSAGE][PASSED] - Text 'Malang' is set on object 'Object Repository/Checkout Page/cityField'
+
+2022-07-06 00:13:38 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout Page/addressField"), findTestData("checkout_data").getValue(9, 1)): Text 'Jl. Soekarno Hatta' is set on object 'Object Repository/Checkout Page/addressField'
+
+2022-07-06 00:13:39 - [MESSAGE][PASSED] - Text 'Jl. Soekarno Hatta' is set on object 'Object Repository/Checkout Page/addressField'
+
+2022-07-06 00:13:39 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout Page/postalCodeField"), findTestData("checkout_data").getValue(10, 1)): Text '65141' is set on object 'Object Repository/Checkout Page/postalCodeField'
+
+2022-07-06 00:13:39 - [MESSAGE][PASSED] - Text '65141' is set on object 'Object Repository/Checkout Page/postalCodeField'
+
+2022-07-06 00:13:39 - [TEST_STEP][PASSED] - click(findTestObject("Checkout Page/checkoutBtn")): Object: 'Object Repository/Checkout Page/checkoutBtn' is clicked on
+
+2022-07-06 00:13:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout Page/checkoutBtn' is clicked on
+
+2022-07-06 00:13:40 - [TEST_STEP][PASSED] - switchToFrame(findTestObject("Summary Order/iFrameSummaryOrder"), 30): null
+
+2022-07-06 00:13:41 - [TEST_STEP][PASSED] - totalAmountAtas = replace("Rp", "").replace(".", ""): Text of object 'Object Repository/Summary Order/orderData/amountTotalHeader' is: 'Rp20.000'
+
+2022-07-06 00:13:41 - [MESSAGE][PASSED] - Text of object 'Object Repository/Summary Order/orderData/amountTotalHeader' is: 'Rp20.000'
+
+2022-07-06 00:13:41 - [TEST_STEP][PASSED] - verifyMatch(totalAmountAtas, totalAmountField, false): Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:13:41 - [MESSAGE][PASSED] - Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:13:41 - [TEST_STEP][PASSED] - orderIdText = getText(findTestObject("Summary Order/orderData/orderID")): Text of object 'Object Repository/Summary Order/orderData/orderID' is: 'Order ID #sample-store-1657041220'
+
+2022-07-06 00:13:41 - [MESSAGE][PASSED] - Text of object 'Object Repository/Summary Order/orderData/orderID' is: 'Order ID #sample-store-1657041220'
+
+2022-07-06 00:13:41 - [TEST_STEP][PASSED] - click(findTestObject("Summary Order/expandSummaryOrder")): Object: 'Object Repository/Summary Order/expandSummaryOrder' is clicked on
+
+2022-07-06 00:13:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Summary Order/expandSummaryOrder' is clicked on
+
+2022-07-06 00:13:41 - [TEST_STEP][PASSED] - totalAmountBawah = replace("Rp", "").replace(".", ""): Text of object 'Object Repository/Summary Order/orderData/amountOrderSummary' is: 'Rp20.000'
+
+2022-07-06 00:13:41 - [MESSAGE][PASSED] - Text of object 'Object Repository/Summary Order/orderData/amountOrderSummary' is: 'Rp20.000'
+
+2022-07-06 00:13:41 - [TEST_STEP][PASSED] - verifyMatch(totalAmountBawah, totalAmountAtas, false): Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:13:41 - [MESSAGE][PASSED] - Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:13:41 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Summary Order/orderData/name"), findTestData("checkout_data").getValue(5, 1)): Actual text and expected text of test object 'Object Repository/Summary Order/orderData/name' are matched.
+
+2022-07-06 00:13:41 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Summary Order/orderData/name' are matched.
+
+2022-07-06 00:13:41 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Summary Order/orderData/phone"), findTestData("checkout_data").getValue(7, 1)): Actual text and expected text of test object 'Object Repository/Summary Order/orderData/phone' are matched.
+
+2022-07-06 00:13:41 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Summary Order/orderData/phone' are matched.
+
+2022-07-06 00:13:41 - [TEST_STEP][PASSED] - click(findTestObject("Summary Order/expandSummaryOrder")): Object: 'Object Repository/Summary Order/expandSummaryOrder' is clicked on
+
+2022-07-06 00:13:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Summary Order/expandSummaryOrder' is clicked on
+
+2022-07-06 00:13:42 - [TEST_STEP][PASSED] - click(findTestObject("paymentMethod/creditCard")): Object: 'Object Repository/paymentMethod/creditCard' is clicked on
+
+2022-07-06 00:13:42 - [MESSAGE][PASSED] - Object: 'Object Repository/paymentMethod/creditCard' is clicked on
+
+2022-07-06 00:13:42 - [TEST_STEP][PASSED] - setText(findTestObject("fieldCreditCard/cardNumberField"), findTestData("credit_card").getValue(1, 4)): Text '4811111111111114' is set on object 'Object Repository/fieldCreditCard/cardNumberField'
+
+2022-07-06 00:13:43 - [MESSAGE][PASSED] - Text '4811111111111114' is set on object 'Object Repository/fieldCreditCard/cardNumberField'
+
+2022-07-06 00:13:43 - [TEST_STEP][PASSED] - setText(findTestObject("fieldCreditCard/expirationDateField"), findTestData("credit_card").getValue(2, 4)): Text '0125' is set on object 'Object Repository/fieldCreditCard/expirationDateField'
+
+2022-07-06 00:13:43 - [MESSAGE][PASSED] - Text '0125' is set on object 'Object Repository/fieldCreditCard/expirationDateField'
+
+2022-07-06 00:13:43 - [TEST_STEP][PASSED] - setText(findTestObject("fieldCreditCard/cvvField"), findTestData("credit_card").getValue(3, 4)): Text '123' is set on object 'Object Repository/fieldCreditCard/cvvField'
+
+2022-07-06 00:13:43 - [MESSAGE][PASSED] - Text '123' is set on object 'Object Repository/fieldCreditCard/cvvField'
+
+2022-07-06 00:13:43 - [TEST_STEP][PASSED] - check(findTestObject("promo/withoutPromo")): Object 'Object Repository/promo/withoutPromo' is checked
+
+2022-07-06 00:13:43 - [MESSAGE][PASSED] - Object 'Object Repository/promo/withoutPromo' is checked
+
+2022-07-06 00:13:43 - [TEST_STEP][PASSED] - amountAfterPromo = replace("Rp", "").replace(".", ""): Text of object 'Object Repository/Summary Order/orderData/amountTotalHeader' is: 'Rp20.000'
+
+2022-07-06 00:13:44 - [MESSAGE][PASSED] - Text of object 'Object Repository/Summary Order/orderData/amountTotalHeader' is: 'Rp20.000'
+
+2022-07-06 00:13:44 - [TEST_STEP][PASSED] - verifyMatch(amountAfterPromo, findTestData("promo").getValue(4, 5), false): Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:13:44 - [MESSAGE][PASSED] - Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:13:44 - [TEST_STEP][PASSED] - click(findTestObject("paymentMethod/paynowBtn")): Object: 'Object Repository/paymentMethod/paynowBtn' is clicked on
+
+2022-07-06 00:13:44 - [MESSAGE][PASSED] - Object: 'Object Repository/paymentMethod/paynowBtn' is clicked on
+
+2022-07-06 00:13:44 - [TEST_STEP][PASSED] - switchToFrame(findTestObject("Confirm OTP credit Card/iframeConfirmOTP"), 30): null
+
+2022-07-06 00:13:44 - [TEST_STEP][PASSED] - setText(findTestObject("Confirm OTP credit Card/otpField"), findTestData("credit_card").getValue(4, 4)): Text '112233' is set on object 'Object Repository/Confirm OTP credit Card/otpField'
+
+2022-07-06 00:13:45 - [MESSAGE][PASSED] - Text '112233' is set on object 'Object Repository/Confirm OTP credit Card/otpField'
+
+2022-07-06 00:13:45 - [TEST_STEP][PASSED] - click(findTestObject("Confirm OTP credit Card/submitOTP")): Object: 'Object Repository/Confirm OTP credit Card/submitOTP' is clicked on
+
+2022-07-06 00:13:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Confirm OTP credit Card/submitOTP' is clicked on
+
+2022-07-06 00:13:46 - [TEST_STEP][PASSED] - switchToDefaultContent(): null
+
+2022-07-06 00:13:46 - [TEST_STEP][PASSED] - switchToFrame(findTestObject("Summary Order/iFrameSummaryOrder"), 30): null
+
+2022-07-06 00:13:46 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Status Payment/statusPayment"), findTestData("credit_card").getValue(5, 4)): Actual text and expected text of test object 'Object Repository/Status Payment/statusPayment' are matched.
+
+2022-07-06 00:13:47 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Status Payment/statusPayment' are matched.
+
+2022-07-06 00:13:47 - [TEST_STEP][PASSED] - totalAmountFinal = replace("Rp", "").replace(".", ""): Text of object 'Object Repository/Status Payment/amountTotal' is: 'Rp20.000'
+
+2022-07-06 00:13:47 - [MESSAGE][PASSED] - Text of object 'Object Repository/Status Payment/amountTotal' is: 'Rp20.000'
+
+2022-07-06 00:13:47 - [TEST_STEP][PASSED] - verifyMatch(totalAmountFinal, amountAfterPromo, false): Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:13:47 - [MESSAGE][PASSED] - Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:13:47 - [TEST_STEP][PASSED] - infoOrderID = getText(findTestObject("Status Payment/infoOrderID")): Text of object 'Object Repository/Status Payment/infoOrderID' is: 'Order ID #sample-store-1657041220'
+
+2022-07-06 00:13:47 - [MESSAGE][PASSED] - Text of object 'Object Repository/Status Payment/infoOrderID' is: 'Order ID #sample-store-1657041220'
+
+2022-07-06 00:13:47 - [TEST_STEP][PASSED] - verifyMatch(infoOrderID, orderIdText, false): Actual text 'Order ID #sample-store-1657041220' and expected text 'Order ID #sample-store-1657041220' are matched 
+
+2022-07-06 00:13:47 - [MESSAGE][PASSED] - Actual text 'Order ID #sample-store-1657041220' and expected text 'Order ID #sample-store-1657041220' are matched 
+
+2022-07-06 00:13:47 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+2022-07-06 00:13:47 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/dot/Katalon Studio/demo-midtrans/Reports/20220706_001248/Trial Running 06-07-2022/20220706_001248/1657041227339.png]]]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Success/DM9 - Sukses checkout dengan BANK BCA" time="15.205" classname="Test Cases/Success/DM9 - Sukses checkout dengan BANK BCA" status="PASSED">
+         <system-out><![CDATA[2022-07-06 00:14:15 - [TEST_CASE][PASSED] - Test Cases/Success/DM9 - Sukses checkout dengan BANK BCA: Test Cases/Success/DM9 - Sukses checkout dengan BANK BCA
+
+2022-07-06 00:14:15 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2022-07-06 00:14:15 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2022-07-06 00:14:16 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-07-06 00:14:16 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-07-06 00:14:18 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2022-07-06 00:14:18 - [TEST_STEP][PASSED] - navigateToUrl(base_url): Navigate to 'https://demo.midtrans.com/' successfully
+
+2022-07-06 00:14:19 - [MESSAGE][PASSED] - Navigate to 'https://demo.midtrans.com/' successfully
+
+2022-07-06 00:14:19 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2022-07-06 00:14:20 - [MESSAGE][PASSED] - Current window maximized
+
+2022-07-06 00:14:20 - [TEST_STEP][PASSED] - priceTag = ", "").replace(",", ""): Text of object 'Object Repository/Landing Page/priceTag' is: '20,000'
+
+2022-07-06 00:14:20 - [MESSAGE][PASSED] - Text of object 'Object Repository/Landing Page/priceTag' is: '20,000'
+
+2022-07-06 00:14:20 - [TEST_STEP][PASSED] - verifyMatch(priceTag, findTestData("checkout_data").getValue(3, 1), false): Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:14:20 - [MESSAGE][PASSED] - Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:14:20 - [TEST_STEP][PASSED] - click(findTestObject("Landing Page/buyNowBtn")): Object: 'Object Repository/Landing Page/buyNowBtn' is clicked on
+
+2022-07-06 00:14:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Landing Page/buyNowBtn' is clicked on
+
+2022-07-06 00:14:21 - [TEST_STEP][PASSED] - qtyField = replace("×", "").replace(" ", ""): Text of object 'Object Repository/Checkout Page/qtyField' is: '× 1'
+
+2022-07-06 00:14:21 - [MESSAGE][PASSED] - Text of object 'Object Repository/Checkout Page/qtyField' is: '× 1'
+
+2022-07-06 00:14:21 - [TEST_STEP][PASSED] - verifyMatch(qtyField, findTestData("checkout_data").getValue(2, 1), false): Actual text '1' and expected text '1' are matched 
+
+2022-07-06 00:14:21 - [MESSAGE][PASSED] - Actual text '1' and expected text '1' are matched 
+
+2022-07-06 00:14:21 - [TEST_STEP][PASSED] - verifyElementAttributeValue(findTestObject("Checkout Page/amountField"), "value", findTestData("checkout_data").getValue(3, 1), 0): Object 'Object Repository/Checkout Page/amountField' has attribute 'value' with value '20000'
+
+2022-07-06 00:14:21 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '10'
+
+2022-07-06 00:14:22 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout Page/amountField' has attribute 'value' with value '20000'
+
+2022-07-06 00:14:22 - [TEST_STEP][PASSED] - totalAmountField = getText(findTestObject("Checkout Page/totalAmountField")).replace(",", ""): Text of object 'Object Repository/Checkout Page/totalAmountField' is: '20,000'
+
+2022-07-06 00:14:22 - [MESSAGE][PASSED] - Text of object 'Object Repository/Checkout Page/totalAmountField' is: '20,000'
+
+2022-07-06 00:14:22 - [TEST_STEP][PASSED] - verifyMatch(totalAmountField, findTestData("checkout_data").getValue(4, 1), false): Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:14:22 - [MESSAGE][PASSED] - Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:14:22 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout Page/nameField"), findTestData("checkout_data").getValue(5, 1)): Text 'Jhon doe' is set on object 'Object Repository/Checkout Page/nameField'
+
+2022-07-06 00:14:23 - [MESSAGE][PASSED] - Text 'Jhon doe' is set on object 'Object Repository/Checkout Page/nameField'
+
+2022-07-06 00:14:23 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout Page/emailField"), findTestData("checkout_data").getValue(6, 1)): Text 'jhondoe@gmail.com' is set on object 'Object Repository/Checkout Page/emailField'
+
+2022-07-06 00:14:23 - [MESSAGE][PASSED] - Text 'jhondoe@gmail.com' is set on object 'Object Repository/Checkout Page/emailField'
+
+2022-07-06 00:14:23 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout Page/phoneField"), findTestData("checkout_data").getValue(7, 1)): Text '+6282230337651' is set on object 'Object Repository/Checkout Page/phoneField'
+
+2022-07-06 00:14:24 - [MESSAGE][PASSED] - Text '+6282230337651' is set on object 'Object Repository/Checkout Page/phoneField'
+
+2022-07-06 00:14:24 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout Page/cityField"), findTestData("checkout_data").getValue(8, 1)): Text 'Malang' is set on object 'Object Repository/Checkout Page/cityField'
+
+2022-07-06 00:14:25 - [MESSAGE][PASSED] - Text 'Malang' is set on object 'Object Repository/Checkout Page/cityField'
+
+2022-07-06 00:14:25 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout Page/addressField"), findTestData("checkout_data").getValue(9, 1)): Text 'Jl. Soekarno Hatta' is set on object 'Object Repository/Checkout Page/addressField'
+
+2022-07-06 00:14:26 - [MESSAGE][PASSED] - Text 'Jl. Soekarno Hatta' is set on object 'Object Repository/Checkout Page/addressField'
+
+2022-07-06 00:14:26 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout Page/postalCodeField"), findTestData("checkout_data").getValue(10, 1)): Text '65141' is set on object 'Object Repository/Checkout Page/postalCodeField'
+
+2022-07-06 00:14:26 - [MESSAGE][PASSED] - Text '65141' is set on object 'Object Repository/Checkout Page/postalCodeField'
+
+2022-07-06 00:14:26 - [TEST_STEP][PASSED] - click(findTestObject("Checkout Page/checkoutBtn")): Object: 'Object Repository/Checkout Page/checkoutBtn' is clicked on
+
+2022-07-06 00:14:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout Page/checkoutBtn' is clicked on
+
+2022-07-06 00:14:27 - [TEST_STEP][PASSED] - switchToFrame(findTestObject("Summary Order/iFrameSummaryOrder"), 30): null
+
+2022-07-06 00:14:27 - [TEST_STEP][PASSED] - totalAmountAtas = replace("Rp", "").replace(".", ""): Text of object 'Object Repository/Summary Order/orderData/amountTotalHeader' is: 'Rp20.000'
+
+2022-07-06 00:14:27 - [MESSAGE][PASSED] - Text of object 'Object Repository/Summary Order/orderData/amountTotalHeader' is: 'Rp20.000'
+
+2022-07-06 00:14:27 - [TEST_STEP][PASSED] - verifyMatch(totalAmountAtas, totalAmountField, false): Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:14:27 - [MESSAGE][PASSED] - Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:14:27 - [TEST_STEP][PASSED] - orderIdText = getText(findTestObject("Summary Order/orderData/orderID")): Text of object 'Object Repository/Summary Order/orderData/orderID' is: 'Order ID #sample-store-1657041267'
+
+2022-07-06 00:14:28 - [MESSAGE][PASSED] - Text of object 'Object Repository/Summary Order/orderData/orderID' is: 'Order ID #sample-store-1657041267'
+
+2022-07-06 00:14:28 - [TEST_STEP][PASSED] - click(findTestObject("Summary Order/expandSummaryOrder")): Object: 'Object Repository/Summary Order/expandSummaryOrder' is clicked on
+
+2022-07-06 00:14:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Summary Order/expandSummaryOrder' is clicked on
+
+2022-07-06 00:14:28 - [TEST_STEP][PASSED] - totalAmountBawah = replace("Rp", "").replace(".", ""): Text of object 'Object Repository/Summary Order/orderData/amountOrderSummary' is: 'Rp20.000'
+
+2022-07-06 00:14:28 - [MESSAGE][PASSED] - Text of object 'Object Repository/Summary Order/orderData/amountOrderSummary' is: 'Rp20.000'
+
+2022-07-06 00:14:28 - [TEST_STEP][PASSED] - verifyMatch(totalAmountBawah, totalAmountAtas, false): Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:14:28 - [MESSAGE][PASSED] - Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:14:28 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Summary Order/orderData/name"), findTestData("checkout_data").getValue(5, 1)): Actual text and expected text of test object 'Object Repository/Summary Order/orderData/name' are matched.
+
+2022-07-06 00:14:28 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Summary Order/orderData/name' are matched.
+
+2022-07-06 00:14:28 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Summary Order/orderData/phone"), findTestData("checkout_data").getValue(7, 1)): Actual text and expected text of test object 'Object Repository/Summary Order/orderData/phone' are matched.
+
+2022-07-06 00:14:28 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Summary Order/orderData/phone' are matched.
+
+2022-07-06 00:14:28 - [TEST_STEP][PASSED] - click(findTestObject("Summary Order/expandSummaryOrder")): Object: 'Object Repository/Summary Order/expandSummaryOrder' is clicked on
+
+2022-07-06 00:14:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Summary Order/expandSummaryOrder' is clicked on
+
+2022-07-06 00:14:28 - [TEST_STEP][PASSED] - click(findTestObject("Summary Order/bankTransferMethod")): Object: 'Object Repository/Summary Order/bankTransferMethod' is clicked on
+
+2022-07-06 00:14:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Summary Order/bankTransferMethod' is clicked on
+
+2022-07-06 00:14:29 - [TEST_STEP][PASSED] - click(findTestObject("paymentMethod/bankBCA")): Object: 'Object Repository/paymentMethod/bankBCA' is clicked on
+
+2022-07-06 00:14:29 - [MESSAGE][PASSED] - Object: 'Object Repository/paymentMethod/bankBCA' is clicked on
+
+2022-07-06 00:14:29 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("paymentMethod/paidBtn"), 40): Object 'Object Repository/paymentMethod/paidBtn' is clickable
+
+2022-07-06 00:14:29 - [MESSAGE][PASSED] - Object 'Object Repository/paymentMethod/paidBtn' is clickable
+
+2022-07-06 00:14:29 - [TEST_STEP][PASSED] - click(findTestObject("paymentMethod/paidBtn")): Object: 'Object Repository/paymentMethod/paidBtn' is clicked on
+
+2022-07-06 00:14:29 - [MESSAGE][PASSED] - Object: 'Object Repository/paymentMethod/paidBtn' is clicked on
+
+2022-07-06 00:14:29 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Status Payment/statusPayment"), findTestData("checkout_data").getValue(11, 1)): Actual text and expected text of test object 'Object Repository/Status Payment/statusPayment' are matched.
+
+2022-07-06 00:14:30 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Status Payment/statusPayment' are matched.
+
+2022-07-06 00:14:30 - [TEST_STEP][PASSED] - totalAmountFinal = replace("Rp", "").replace(".", ""): Text of object 'Object Repository/Status Payment/amountTotal' is: 'Rp20.000'
+
+2022-07-06 00:14:30 - [MESSAGE][PASSED] - Text of object 'Object Repository/Status Payment/amountTotal' is: 'Rp20.000'
+
+2022-07-06 00:14:30 - [TEST_STEP][PASSED] - verifyMatch(totalAmountFinal, totalAmountAtas, false): Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:14:30 - [MESSAGE][PASSED] - Actual text '20000' and expected text '20000' are matched 
+
+2022-07-06 00:14:30 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+2022-07-06 00:14:31 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/dot/Katalon Studio/demo-midtrans/Reports/20220706_001248/Trial Running 06-07-2022/20220706_001248/1657041270526.png]]]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-07-06 00:12:53 - [TEST_SUITE][FAILED] - Trial Running 06-07-2022: Test Cases/Success/DM9 - Sukses checkout dengan BANK BCA FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Status Payment/statusPayment' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$8.call(Unknown Source)
+	at DM9 - Sukses checkout dengan BANK BCA.run(DM9 - Sukses checkout dengan BANK BCA:88)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1657041168877.run(TempTestSuite1657041168877.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Status Payment/statusPayment' located by '//*[@class = 'text-headline medium']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-out>
+      <system-err><![CDATA[2022-07-06 00:12:53 - [TEST_SUITE][FAILED] - Trial Running 06-07-2022: Test Cases/Success/DM9 - Sukses checkout dengan BANK BCA FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Status Payment/statusPayment' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$8.call(Unknown Source)
+	at DM9 - Sukses checkout dengan BANK BCA.run(DM9 - Sukses checkout dengan BANK BCA:88)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1657041168877.run(TempTestSuite1657041168877.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Status Payment/statusPayment' located by '//*[@class = 'text-headline medium']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+   </testsuite>
+</testsuites>

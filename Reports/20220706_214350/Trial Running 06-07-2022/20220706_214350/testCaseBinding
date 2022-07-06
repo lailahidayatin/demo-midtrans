@@ -1,0 +1,7 @@
+{"testCaseName":"Test Cases/Success/DM4 - Sukses checkout dengan Promo installment","testCaseId":"Test Cases/Success/DM4 - Sukses checkout dengan Promo installment","iterationVariableName":""}
+{"testCaseName":"Test Cases/Success/DM5 - Sukses checkout dengan Promo potongan 10","testCaseId":"Test Cases/Success/DM5 - Sukses checkout dengan Promo potongan 10","iterationVariableName":""}
+{"testCaseName":"Test Cases/Success/DM6 - Sukses checkout dan gagal menggunakan Promo Midtrans karena kuota habis","testCaseId":"Test Cases/Success/DM6 - Sukses checkout dan gagal menggunakan Promo Midtrans karena kuota habis","iterationVariableName":""}
+{"testCaseName":"Test Cases/Success/DM7 - Sukses checkout dengan Promo potongan 10 rupiah","testCaseId":"Test Cases/Success/DM7 - Sukses checkout dengan Promo potongan 10 rupiah","iterationVariableName":""}
+{"testCaseName":"Test Cases/Success/DM8 - Sukses checkout dengan Promo Proceed without promo","testCaseId":"Test Cases/Success/DM8 - Sukses checkout dengan Promo Proceed without promo","iterationVariableName":""}
+{"testCaseName":"Test Cases/Success/DM9 - Sukses checkout dengan BANK BCA","testCaseId":"Test Cases/Success/DM9 - Sukses checkout dengan BANK BCA","iterationVariableName":""}
+{"testCaseName":"Test Cases/Fail/DM1 - Gagal checkout dengan invalid data pada credit and debit card","testCaseId":"Test Cases/Fail/DM1 - Gagal checkout dengan invalid data pada credit and debit card","iterationVariableName":""}

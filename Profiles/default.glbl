@@ -4,4 +4,9 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://demo.midtrans.com/'</initValue>
+      <name>base_url</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
