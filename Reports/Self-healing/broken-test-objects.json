@@ -1,3 +1,64 @@
 {
-  "brokenTestObjects" : [ ]
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Object Repo by Record/demo-midtrans/input_CreditCard",
+      "brokenLocator": "//input[@value\u003d\u00274911 1111 1111 1114\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[@id\u003d\u0027application\u0027]/div/div[2]/div[2]/input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Object Repo by Record/demo-midtrans/input_CreditCard_idRelative.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/CreditCard/input_CreditCard",
+      "brokenLocator": "//input[@value\u003d\u00274911 1111 1111 1114\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[@id\u003d\u0027application\u0027]/div/div[2]/div[2]/input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/CreditCard/input_CreditCard_idRelative.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Object Repo by Record/Page_Sample Store/input_Card number_valid-input-value",
+      "brokenLocator": "//input[@value\u003d\u00274\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[@id\u003d\u0027application\u0027]/div/div[2]/div[2]/input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Object Repo by Record/Page_Sample Store/input_Card number_valid-input-value_idRelative.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Object Repo by Record/demo-midtrans/input_passTransaction",
+      "brokenLocator": "//input[@id\u003d\u0027PaRes\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div/input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Object Repo by Record/demo-midtrans/iframe-payNow",
+      "brokenLocator": "//div[@id\u003d\u0027application\u0027]/iframe",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//iframe",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Object Repo by Record/demo-midtrans/iframe-payNow_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Object Repo by Record/demo-midtrans/btn-OK-transaction",
+      "brokenLocator": "//button[@name\u003d\u0027ok\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//button",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Object Repo by Record/demo-midtrans/btn-OK-transaction_position.png"
+    }
+  ]
 }
